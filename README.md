@@ -10,7 +10,7 @@
 
 1. [Kubernetes Learning Resources](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#kubernetes-learning-resources)
 
-2. [Kubernetes Tools and Projects](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#kubernetes-tool-and-projects)
+2. [Kubernetes Tools and Projects](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#kubernetes-tools-and-projects)
 
 
 <img src="https://user-images.githubusercontent.com/45159366/105645195-db9ea780-5e4e-11eb-8357-fb38b2f06d74.png">
