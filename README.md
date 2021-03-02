@@ -8,16 +8,16 @@
 
 # Table of Contents
 
-1. [Kubernetes Learning Resources](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#)
+1. [Kubernetes Learning Resources](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#kubernetes-learning-resources)
 
-2. [Kubernetes Tools and Projects](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#)
+2. [Kubernetes Tools and Projects](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#kubernetes-tool-and-projects)
 
 
 <img src="https://user-images.githubusercontent.com/45159366/105645195-db9ea780-5e4e-11eb-8357-fb38b2f06d74.png">
 
 **Building Highly-Availability(HA) Clusters with kubeadm. Source: [Kubernetes.io](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/), 2020**
 
-##  Kubernetes Learning Resources
+# Kubernetes Learning Resources
 
 [Kubernetes (K8s)](https://kubernetes.io/) is an open-source system for automating deployment, scaling, and management of containerized applications.
 
@@ -81,7 +81,7 @@
 
 [Scalable Microservices with Kubernetes course from Udacity ](https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615)
 
-## Tools
+# Kubernetes Tools and Projects 
 
 [Back to the Top](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#table-of-contents)
 
