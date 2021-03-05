@@ -6,6 +6,8 @@
 
 #### A guide covering Kubernetes including the applications and tools that will make you a better and more efficient Kubernetes developer.
 
+**Note: You can easily convert this markdown file to a PDF in [VSCode](https://code.visualstudio.com/) using this handy extension [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf).**
+
 # Table of Contents
 
 1. [Kubernetes Learning Resources](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#kubernetes-learning-resources)
