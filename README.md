@@ -18,7 +18,7 @@
 
 4. [Python Development](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#python-development)
 
-5. [Bash/PowerShell Development](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#bash-powershell-development)
+5. [Bash/PowerShell Development](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#bashpowershell-development)
 
 6. [Machine Learning](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#machine-learning)
 
@@ -171,11 +171,6 @@
 
 [Back to the Top](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#table-of-contents)
 
-<p align="center">
- <img src="https://user-images.githubusercontent.com/45159366/93719679-068f8c80-fb39-11ea-8baa-9e779ee58a0a.png">
-  <br />
-</p>
-
 ## Go Learning Resources
 
 [Go](https://golang.org/) is an open source programming language that makes it easy to build simple, reliable, and efficient software.
@@ -248,13 +243,6 @@
 # Python Development
 
 [Back to the Top](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#table-of-contents)
-
-<p align="center">
- <img src="https://user-images.githubusercontent.com/45159366/93133273-ce490380-f68b-11ea-81d0-7f6a3debe6c0.png">
-  <br />
-  
-</p>
-
 
 ## Python Learning Resources
 
@@ -375,11 +363,6 @@
 # Bash/PowerShell Development
 
 [Back to the Top](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#table-of-contents)
-
-<p align="center">
- <img src="https://user-images.githubusercontent.com/45159366/95128610-89564100-070e-11eb-83de-9697fb490886.png">
-  <br />
-</p>
 
 ## Bash/PowerShell Learning Resources
 
