@@ -14,6 +14,22 @@
 
 2. [Kubernetes Tools and Projects](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#kubernetes-tools-and-projects)
 
+3. [Go Development](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#go-development)
+
+4. [Python Development](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#python-development)
+
+5. [Bash/PowerShell Development](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#bash-powershell-development)
+
+6. [Machine Learning](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#machine-learning)
+
+7. [Networking](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#networking)
+
+8. [Databases](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#databases)
+
+9. [Telco 5G](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#telco-5g)
+
+10. [Open Source Security](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#open-source-security)
+
 
 <img src="https://user-images.githubusercontent.com/45159366/105645195-db9ea780-5e4e-11eb-8357-fb38b2f06d74.png">
 
