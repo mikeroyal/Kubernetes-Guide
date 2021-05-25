@@ -33,7 +33,12 @@
 
 <img src="https://user-images.githubusercontent.com/45159366/105645195-db9ea780-5e4e-11eb-8357-fb38b2f06d74.png">
 
-**Building Highly-Availability(HA) Clusters with kubeadm. Source: [Kubernetes.io](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/), 2020**
+**Building Highly-Availability(HA) Clusters with kubeadm. Source: [Kubernetes.io](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/)**
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/119560608-fc253280-bd58-11eb-8f92-2d998b84d9ea.png">
+  <br />
+</p>
 
 # Kubernetes Learning Resources
 
@@ -99,7 +104,7 @@
 
 [Scalable Microservices with Kubernetes course from Udacity ](https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615)
 
-# Kubernetes Tools and Projects 
+# Kubernetes Tools, Frameworks, and Projects 
 
 [Back to the Top](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#table-of-contents)
 
