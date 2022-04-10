@@ -158,6 +158,40 @@
 
 [KubeFlow](https://www.kubeflow.org/) is a tool dedicated to making deployments of machine learning (ML) workflows on Kubernetes simple, portable and scalable.
 
+[Kubebox](https://github.com/astefanutti/kubebox) is a Terminal and Web console for Kubernetes.
+
+[Kubsec](https://github.com/controlplaneio/kubesec) is a Security risk analysis for Kubernetes resources.
+
+[Replex](https://www.replex.io/) is a Kubernetes Governance and Cost Management for the Cloud-Native Enterprise.
+
+[Virtual Kubelet](https://virtual-kubelet.io/) is an open-source [Kubernetes kubelet](https://kubernetes.io/docs/reference/generated/kubelet/) implementation that masquerades as a kubelet.
+
+[Telepresence](https://www.telepresence.io/) is a fast, local development for Kubernetes and OpenShift microservices.
+
+[Weave Scope](https://www.weave.works/oss/scope/) is a tool that automatically detects processes, containers, hosts. No kernel modules, no agents, no special libraries, no coding. It seamless integration with Docker, Kubernetes, DCOS and AWS ECS.
+
+[Nuclio](https://nuclio.io/) is a high-performance "serverless" framework focused on data, I/O, and compute intensive workloads. It is well integrated with popular data science tools, such as [Jupyter](https://jupyter.org/) and [Kubeflow](https://www.kubeflow.org/); supports a variety of data and streaming sources; and supports execution over CPUs and GPUs. 
+
+[Supergiant Control](https://github.com/supergiant/control) is a tool that manages the lifecycle of clusters on your infrastructure and allows deployment of applications via HELM. Its deployment and configuration workflows will help you to get up and running with Kubernetes faster.
+
+[Supergiant Capacity - Beta](https://github.com/supergiant/capacity) is a tool that ensures that the right hardware is available for the required resource load of your Kubernetes cluster at any given time. This helps prevent over-provisioning of your container environment and overspending on your hardware budget. 
+
+[Test suite for Kubernetes](https://github.com/mrahbar/k8s-testsuite) is a test suite consists of two Helm charts for network bandwith testing and load testing a Kuberntes cluster. 
+
+[Keel](https://github.com/keel-hq/keel) is a Kubernetes Operator to automate Helm, DaemonSet, StatefulSet & Deployment updates.
+
+[Kube Monkey](https://github.com/asobti/kube-monkey) is an implementation of Netflix's Chaos Monkey for Kubernetes clusters. It randomly deletes Kubernetes (k8s) pods in the cluster encouraging and validating the development of failure-resilient services.
+
+[Kube State Metrics (KSM)](https://github.com/kubernetes/kube-state-metrics) is a simple service that listens to the Kubernetes API server and generates metrics about the state of the objects. It's not focused on the health of the individual Kubernetes components, but rather on the health of the various objects inside, such as deployments, nodes and pods.
+
+[Sonobuoy](https://sonobuoy.io/) is a diagnostic tool that makes it easier to understand the state of a Kubernetes cluster by running a choice of configuration tests in an accessible and non-destructive manner.
+
+[PowerfulSeal](https://github.com/powerfulseal/powerfulseal) is a powerful testing tool for your Kubernetes clusters, so that you can detect problems as early as possible.
+
+[Test Infra](https://github.com/kubernetes/test-infra) is a repository contains tools and configuration files for the testing and automation needs of the Kubernetes project.
+
+[cAdvisor (Container Advisor)](https://github.com/google/cadvisor) is a tool that provides container users an understanding of the resource usage and performance characteristics of their running containers. It's a running daemon that collects, aggregates, processes, and exports information about running containers. Specifically, for each container it keeps resource isolation parameters, historical resource usage, histograms of complete historical resource usage and network statistics. 
+
 [Etcd](https://etcd.io/) is a distributed key-value store that provides a reliable way to store data that needs to be accessed by a distributed system or cluster of machines. Etcd is used as the backend for service discovery and stores cluster state and configuration for Kubernetes.
 
 [OpenEBS](https://openebs.io/) is a Kubernetes-based tool to create stateful applications using Container Attached Storage.
