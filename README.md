@@ -11,6 +11,9 @@
 # Table of Contents
 
 1. [Kubernetes Learning Resources](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#kubernetes-learning-resources)
+    - [Developer Resources](https://github.com/mikeroyal/Kubernetes-Guide#developer-resources)
+    - [Kubernetes Courses & Certifications](https://github.com/mikeroyal/Kubernetes-Guide#kubernetes-courses--certifications)
+    - [Books](https://github.com/mikeroyal/Kubernetes-Guide#books)
 
 2. [Kubernetes Tools and Projects](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#kubernetes-tools-and-projects)
 
@@ -30,79 +33,137 @@
 
 10. [Open Source Security](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#open-source-security)
 
-
-<img src="https://user-images.githubusercontent.com/45159366/105645195-db9ea780-5e4e-11eb-8357-fb38b2f06d74.png">
-
-**Building Highly-Availability(HA) Clusters with kubeadm. Source: [Kubernetes.io](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/)**
-
 <p align="center">
  <img src="https://user-images.githubusercontent.com/45159366/119560608-fc253280-bd58-11eb-8f92-2d998b84d9ea.png">
   <br />
 </p>
 
 # Kubernetes Learning Resources
+[Back to the Top](https://github.com/mikeroyal/Kubernetes-Guide#table-of-contents)
 
 [Kubernetes (K8s)](https://kubernetes.io/) is an open-source system for automating deployment, scaling, and management of containerized applications.
 
-[Getting Kubernetes Certifications](https://training.linuxfoundation.org/certification/catalog/?_sft_technology=kubernetes)
+<img src="https://user-images.githubusercontent.com/45159366/105645195-db9ea780-5e4e-11eb-8357-fb38b2f06d74.png">
 
-[Getting started with Kubernetes on AWS](https://aws.amazon.com/kubernetes/)
+**Building Highly-Availability(HA) Clusters with kubeadm. Source: [Kubernetes.io](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/)**
 
-[Kubernetes on Microsoft Azure](https://azure.microsoft.com/en-us/topic/what-is-kubernetes/)
+### Developer Resources
+[Back to the Top](https://github.com/mikeroyal/Kubernetes-Guide#table-of-contents)
 
-[Intro to Azure Kubernetes Service](https://docs.microsoft.com/en-us/azure/aks/kubernetes-dashboard)
+ - [Kubernetes Certifications](https://kubernetes.io/training/)
 
-[Azure Red Hat OpenShift ](https://azure.microsoft.com/en-us/services/openshift/)
+ - [Getting started with Kubernetes on AWS](https://aws.amazon.com/kubernetes/)
 
-[Getting started with Google Cloud](https://cloud.google.com/learn/what-is-kubernetes)
+ - [Kubernetes on Microsoft Azure](https://azure.microsoft.com/en-us/topic/what-is-kubernetes/)
 
-[Getting started with Kubernetes on Red Hat](https://www.redhat.com/en/topics/containers/what-is-kubernetes)
+ - [Intro to Azure Kubernetes Service](https://docs.microsoft.com/en-us/azure/aks/kubernetes-dashboard)
+ 
+ - [Getting started with Google Cloud](https://cloud.google.com/learn/what-is-kubernetes)
 
-[Getting started with Kubernetes on IBM](https://www.ibm.com/cloud/learn/kubernetes)
+ - [Azure Red Hat OpenShift ](https://azure.microsoft.com/en-us/services/openshift/)
 
-[Red Hat OpenShift on IBM Cloud](https://www.ibm.com/cloud/openshift)
+ - [Getting started with Kubernetes on Red Hat](https://www.redhat.com/en/topics/containers/what-is-kubernetes)
 
-[Enable OpenShift Virtualization on Red Hat OpenShift](https://developers.redhat.com/blog/2020/08/28/enable-openshift-virtualization-on-red-hat-openshift/)
+ - [Getting started with Kubernetes on IBM](https://www.ibm.com/cloud/learn/kubernetes)
 
-[YAML basics in Kubernetes](https://developer.ibm.com/technologies/containers/tutorials/yaml-basics-and-usage-in-kubernetes/)
+ - [Red Hat OpenShift on IBM Cloud](https://www.ibm.com/cloud/openshift)
+ 
+ - [Kubernetes Contributors](https://www.kubernetes.dev/)
 
-[Elastic Cloud on Kubernetes](https://www.elastic.co/elastic-cloud-kubernetes)
+ - [Kubernetes Tutorials from Pulumi](https://www.pulumi.com/docs/tutorials/kubernetes/)
 
-[Docker and Kubernetes](https://www.docker.com/products/kubernetes)
+ - [Enable OpenShift Virtualization on Red Hat OpenShift](https://developers.redhat.com/blog/2020/08/28/enable-openshift-virtualization-on-red-hat-openshift/)
 
-[Running Apache Spark on Kubernetes](http://spark.apache.org/docs/latest/running-on-kubernetes.html)
+ - [YAML basics in Kubernetes](https://developer.ibm.com/technologies/containers/tutorials/yaml-basics-and-usage-in-kubernetes/)
 
-[Kubernetes Across VMware vRealize Automation](https://blogs.vmware.com/management/2019/06/kubernetes-across-vmware-cloud-automation-services.html)
+ - [Elastic Cloud on Kubernetes](https://www.elastic.co/elastic-cloud-kubernetes)
 
-[VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
+ - [Docker and Kubernetes](https://www.docker.com/products/kubernetes)
 
-[All the Ways VMware Tanzu Works with AWS](https://tanzu.vmware.com/content/blog/all-the-ways-vmware-tanzutm-works-with-aws)
+ - [Running Apache Spark on Kubernetes](http://spark.apache.org/docs/latest/running-on-kubernetes.html)
 
-[VMware Tanzu Education](https://tanzu.vmware.com/education)
+ - [Kubernetes Across VMware vRealize Automation](https://blogs.vmware.com/management/2019/06/kubernetes-across-vmware-cloud-automation-services.html)
 
-[Using Ansible in a Cloud-Native Kubernetes Environment](https://www.ansible.com/blog/how-useful-is-ansible-in-a-cloud-native-kubernetes-environment)
+ - [VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
 
-[Managing Kubernetes (K8s) objects with Ansible](https://docs.ansible.com/ansible/latest/collections/community/kubernetes/k8s_module.html)
+ - [All the Ways VMware Tanzu Works with AWS](https://tanzu.vmware.com/content/blog/all-the-ways-vmware-tanzutm-works-with-aws)
 
-[Setting up a Kubernetes cluster using Vagrant and Ansible](https://kubernetes.io/blog/2019/03/15/kubernetes-setup-using-ansible-and-vagrant/)
+ - [Using Ansible in a Cloud-Native Kubernetes Environment](https://www.ansible.com/blog/how-useful-is-ansible-in-a-cloud-native-kubernetes-environment)
 
-[Running MongoDB with Kubernetes](https://www.mongodb.com/kubernetes)
+ - [Managing Kubernetes (K8s) objects with Ansible](https://docs.ansible.com/ansible/latest/collections/community/kubernetes/k8s_module.html)
 
-[Kubernetes Fluentd](https://docs.fluentd.org/v/0.12/articles/kubernetes-fluentd)
+ - [Setting up a Kubernetes cluster using Vagrant and Ansible](https://kubernetes.io/blog/2019/03/15/kubernetes-setup-using-ansible-and-vagrant/)
 
-[Understanding the new GitLab Kubernetes Agent](https://about.gitlab.com/blog/2020/09/22/introducing-the-gitlab-kubernetes-agent/)
+ - [Running MongoDB with Kubernetes](https://www.mongodb.com/kubernetes)
 
-[Intro Local Process with Kubernetes for Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/introducing-local-process-with-kubernetes-for-visual-studio%E2%80%AF2019/)
+ - [Kubernetes Fluentd](https://docs.fluentd.org/v/0.12/articles/kubernetes-fluentd)
 
-[Kubernetes Contributors](https://www.kubernetes.dev/)
+ - [Understanding the new GitLab Kubernetes Agent](https://about.gitlab.com/blog/2020/09/22/introducing-the-gitlab-kubernetes-agent/)
 
-[KubeAcademy from VMware](https://kube.academy/)
+ - [Intro Local Process with Kubernetes for Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/introducing-local-process-with-kubernetes-for-visual-studio%E2%80%AF2019/)
 
-[Kubernetes Tutorials from Pulumi](https://www.pulumi.com/docs/tutorials/kubernetes/)
+ - [Kubernetes Playground by Katacoda](https://www.katacoda.com/courses/kubernetes/playground)
 
-[Kubernetes Playground by Katacoda](https://www.katacoda.com/courses/kubernetes/playground)
+### Kubernetes Courses & Certifications
+[Back to the Top](https://github.com/mikeroyal/Kubernetes-Guide#table-of-contents)
 
-[Scalable Microservices with Kubernetes course from Udacity ](https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615)
+ - [Kubernetes Training & Certifications](https://kubernetes.io/training/)
+ 
+ - [Top Kubernetes Courses Online | Coursera](https://www.coursera.org/courses?query=kubernetes)
+ 
+ - [Top Kubernetes Courses Online | Udemy](https://www.udemy.com/topic/kubernetes/)
+ 
+ - [Kubernetes Courses - IBM Developer](https://developer.ibm.com/components/kubernetes/courses/)
+ 
+ - [Introduction to Kubernetes Courses | edX](https://www.edx.org/course/introduction-to-kubernetes)
+
+ - [VMware Tanzu Education](https://tanzu.vmware.com/education)
+
+ - [KubeAcademy from VMware](https://kube.academy/)
+ 
+ - [Online Kubernetes Course: Beginners Guide to Kubernetes | Pluralsight](https://www.pluralsight.com/courses/getting-started-kubernetes)
+ 
+ - [Getting Started with Google Kubernetes Engine | Pluralsight](https://www.pluralsight.com/courses/getting-started-google-kubernetes-engine-8)
+
+ - [Scalable Microservices with Kubernetes course from Udacity](https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615)
+
+### Books
+[Back to the Top](https://github.com/mikeroyal/Kubernetes-Guide#table-of-contents)
+
+- [Kubernetes for Full-Stack Developers by Digital Ocean](https://assets.digitalocean.com/books/kubernetes-for-full-stack-developers.pdf)
+
+- [Kubernetes Patterns - Red Hat](https://www.redhat.com/cms/managed-files/cm-oreilly-kubernetes-patterns-ebook-f19824-201910-en.pdf)
+
+- [The Ultimate Guide to Kubernetes Deployments with Octopus](https://i.octopus.com/books/kubernetes-book.pdf)
+
+- [Learng Kubernetes (PDF)](https://riptutorial.com/Download/kubernetes.pdf)
+
+- [Certified Kubernetes Administrator (CKA) Study Guide: In-Depth Guidance and Practice](https://www.amazon.com/Certified-Kubernetes-Administrator-Study-Depth/dp/1098107225/ref=sr_1_29?crid=15963283P4C0V&keywords=kubernetes&qid=1653935057&s=books&sprefix=kubernetes%2Cstripbooks%2C174&sr=1-29)
+
+- [Quick Start Kubernetes by Nigel Poulton (2022)](https://www.amazon.com/Quick-Start-Kubernetes-Nigel-Poulton-ebook/dp/B08T21NW4Z/ref=sr_1_18?crid=15963283P4C0V&keywords=kubernetes&qid=1653935057&s=books&sprefix=kubernetes%2Cstripbooks%2C174&sr=1-18)
+
+ - [The Kubernetes Book by Nigel Poulton (2022)](https://www.amazon.com/Kubernetes-Book-Version-November-2018-ebook/dp/B072TS9ZQZ/ref=sr_1_4?crid=15963283P4C0V&keywords=kubernetes&qid=1653935057&s=books&sprefix=kubernetes%2Cstripbooks%2C174&sr=1-4)
+ 
+ - [Kubernetes: Up and Running: Dive into the Future of Infrastructure](https://www.amazon.com/Kubernetes-Running-Dive-Future-Infrastructure/dp/1492046531/ref=sr_1_5?crid=15963283P4C0V&keywords=kubernetes&qid=1653935057&s=books&sprefix=kubernetes%2Cstripbooks%2C174&sr=1-5)
+ 
+ - [Kubernetes and Docker - An Enterprise Guide: Effectively containerize applications, integrate enterprise systems, and scale applications in your enterprise](https://www.amazon.com/Kubernetes-Docker-Effectively-containerize-applications/dp/183921340X/ref=sr_1_24?crid=15963283P4C0V&keywords=kubernetes&qid=1653935057&s=books&sprefix=kubernetes%2Cstripbooks%2C174&sr=1-24)
+ 
+ - [Kubernetes in Action](https://www.amazon.com/Kubernetes-Action-Marko-Luksa/dp/1617293725/ref=sr_1_7?crid=15963283P4C0V&keywords=kubernetes&qid=1653935057&s=books&sprefix=kubernetes%2Cstripbooks%2C174&sr=1-7)
+ 
+ - [Kubernetes – An Enterprise Guide: Effectively containerize applications, integrate enterprise systems, and scale](https://www.amazon.com/Kubernetes-Enterprise-Effectively-containerize-applications/dp/1803230037/ref=sr_1_6?crid=15963283P4C0V&keywords=kubernetes&qid=1653935057&s=books&sprefix=kubernetes%2Cstripbooks%2C174&sr=1-6)
+ 
+ - [Production Kubernetes: Building Successful Application Platforms](https://www.amazon.com/Production-Kubernetes-Successful-Application-Platforms/dp/1492092304/ref=sr_1_8?crid=15963283P4C0V&keywords=kubernetes&qid=1653935057&s=books&sprefix=kubernetes%2Cstripbooks%2C174&sr=1-8)
+ 
+ - [The Kubernetes Bible: The definitive guide to deploying and managing Kubernetes across major cloud platforms](https://www.amazon.com/Kubernetes-Bible-definitive-deploying-platforms/dp/1838827692/ref=sr_1_16?crid=15963283P4C0V&keywords=kubernetes&qid=1653935057&s=books&sprefix=kubernetes%2Cstripbooks%2C174&sr=1-16)
+ 
+ - [Networking and Kubernetes: A Layered Approach](https://www.amazon.com/Networking-Kubernetes-Approach-James-Strong/dp/1492081655/ref=sr_1_12?crid=15963283P4C0V&keywords=kubernetes&qid=1653935057&s=books&sprefix=kubernetes%2Cstripbooks%2C174&sr=1-12)
+ 
+ - [Kubernetes Best Practices: Blueprints for Building Successful Applications on Kubernetes](https://www.amazon.com/Kubernetes-Best-Practices-Blueprints-Applications/dp/1492056472/ref=sr_1_19?crid=15963283P4C0V&keywords=kubernetes&qid=1653935057&s=books&sprefix=kubernetes%2Cstripbooks%2C174&sr=1-19)
+ 
+ - [Kubernetes Security and Observability: A Holistic Approach to Securing Containers and Cloud Native Apps](https://www.amazon.com/Kubernetes-Security-Observability-Containers-Applications/dp/1098107101/ref=sr_1_26?crid=15963283P4C0V&keywords=kubernetes&qid=1653935057&s=books&sprefix=kubernetes%2Cstripbooks%2C174&sr=1-26)
+ 
+ - [Hands-on Kubernetes on Azure: Use Azure Kubernetes Service to automate management, scaling, and deployment of containerized apps](https://www.amazon.com/Hands-Kubernetes-Azure-containerized-applications-ebook/dp/B095H26VFY/ref=sr_1_11?crid=15963283P4C0V&keywords=kubernetes&qid=1653935057&s=books&sprefix=kubernetes%2Cstripbooks%2C174&sr=1-11)
+
 
 # Kubernetes Tools, Frameworks, and Projects 
 
