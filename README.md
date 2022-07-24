@@ -32,6 +32,8 @@
 9. [Telco 5G](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#telco-5g)
 
 10. [Open Source Security](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#open-source-security)
+    - [Security Tutorials & Resources](#Security-Tutorials--Resources)
+    - [Security Cerifications](#Security-Cerifications)
 
 <p align="center">
  <img src="https://user-images.githubusercontent.com/45159366/119560608-fc253280-bd58-11eb-8f92-2d998b84d9ea.png">
@@ -919,12 +921,12 @@ Networking works by piggybacks on a number of different protocols on top of each
 
 <img src="https://user-images.githubusercontent.com/45159366/105409952-14881380-5be6-11eb-84fc-b07db69698ed.png">
  
- **VMware Cloud First Approach. Source: [VMware](https://www.vmware.com/products/telco-cloud-automation.html), 2020.**
+ **VMware Cloud First Approach. Source: [VMware](https://www.vmware.com/products/telco-cloud-automation.html).**
  
  
  <img src="https://user-images.githubusercontent.com/45159366/105409956-1520aa00-5be6-11eb-8215-735c92a5470c.png">
  
- **VMware Telco Cloud Automation Components. Source: [VMware](https://www.vmware.com/products/telco-cloud-automation.html), 2020.**
+ **VMware Telco Cloud Automation Components. Source: [VMware](https://www.vmware.com/products/telco-cloud-automation.html).**
  
  
 ## Telco Learning Resources
@@ -1023,6 +1025,12 @@ Networking works by piggybacks on a number of different protocols on top of each
 
 [CIS Benchmarks - CIS Center for Internet Security](https://www.cisecurity.org/cis-benchmarks/)
 
+[CIS Top 18 Critical Security Controls](https://www.cisecurity.org/controls/cis-controls-list)
+
+[OSSTMM (Open Source Security Testing Methodology Manual) PDF](https://github.com/mikeroyal/Open-Source-Security-Guide/files/8834704/osstmm.en.2.1.pdf)
+
+[NIST Technical Guide to Information Security Testing and Assessment (PDF)](https://github.com/mikeroyal/Open-Source-Security-Guide/files/8834705/nistspecialpublication800-115.pdf)
+
 [NIST - Current FIPS](https://www.nist.gov/itl/current-fips)
 
 [ISO Standards Catalogue](https://www.iso.org/standards.html)
@@ -1058,11 +1066,37 @@ It is extended by a set of privacy-specific requirements, control objectives and
 
 [Libgcrypt](https://www.gnupg.org/related_software/libgcrypt/) is a general purpose cryptographic library originally based on code from GnuPG.
 
-
-
 [Pi-hole](https://pi-hole.net/) is a [DNS sinkhole](https://en.wikipedia.org/wiki/DNS_Sinkhole) that protects your devices from unwanted content, without installing any client-side software, intended for use on a private network. It is designed for use on embedded devices with network capability, such as the Raspberry Pi, but it can be used on other machines running Linux and cloud implementations.
 
 [Aircrack-ng](https://www.aircrack-ng.org/) is a network software suite consisting of a detector, packet sniffer, WEP and WPA/WPA2-PSK cracker and analysis tool for 802.11 wireless LANs. It works with any wireless network interface controller whose driver supports raw monitoring mode and can sniff 802.11a, 802.11b and 802.11g traffic.
+
+[Acra](https://cossacklabs.com/acra) is a single database security suite with 9 strong security controls: application level encryption, searchable encryption, data masking, data tokenization, secure authentication, data leakage prevention, database request firewall, cryptographically signed audit logging, security events automation. It is designed to cover the most important data security requirements with SQL and NoSQL databases and distributed apps in a fast, convenient, and reliable way.
+
+[Netdata](https://github.com/netdata/netdata) is high-fidelity infrastructure monitoring and troubleshooting, real-time monitoring Agent collects thousands of metrics from systems, hardware, containers, and applications with zero configuration. It runs permanently on all your physical/virtual servers, containers, cloud deployments, and edge/IoT devices, and is perfectly safe to install on your systems mid-incident without any preparation.
+
+[Trivy](https://aquasecurity.github.io/trivy/) is a comprehensive security scanner for vulnerabilities in container images, file systems, and Git repositories, as well as for configuration issues and hard-coded secrets.
+
+[Lynis](https://cisofy.com/lynis/) is a security auditing tool for Linux, macOS, and UNIX-based systems. Assists with compliance testing (HIPAA/ISO27001/PCI DSS) and system hardening. Agentless, and installation optional. 
+
+[OWASP Nettacker](https://github.com/OWASP/Nettacker) is a project created to automate information gathering, vulnerability scanning and eventually generating a report for networks, including services, bugs, vulnerabilities, misconfigurations, and other information. This software will utilize TCP SYN, ACK, ICMP, and many other protocols in order to detect and bypass Firewall/IDS/IPS devices. 
+
+[Terrascan](https://runterrascan.io/) is a static code analyzer for Infrastructure as Code to mitigate risk before provisioning cloud native infrastructure. 
+
+[Sliver](https://github.com/BishopFox/sliver) is an open source cross-platform adversary emulation/red team framework, it can be used by organizations of all sizes to perform security testing. Sliver's implants support C2 over Mutual TLS (mTLS), WireGuard, HTTP(S), and DNS and are dynamically compiled with per-binary asymmetric encryption keys.
+
+[Attack Surface Analyzer](https://github.com/microsoft/AttackSurfaceAnalyzer) is a [Microsoft](https://github.com/microsoft/) developed open source security tool that analyzes the attack surface of a target system and reports on potential security vulnerabilities introduced during the installation of software or system misconfiguration.
+
+[Intel Owl](https://intelowl.readthedocs.io/) is an Open Source Intelligence, or OSINT solution to get threat intelligence data about a specific file, an IP or a domain from a single API at scale. It integrates a number of analyzers available online and a lot of cutting-edge malware analysis tools.
+
+[Deepfence ThreatMapper](https://deepfence.io/) is a runtime tool that hunts for vulnerabilities in your cloud native production platforms(Linux, K8s, AWS Fargate and more.), and ranks these vulnerabilities based on their risk-of-exploit. 
+
+[Dockle](https://containers.goodwith.tech/) is a Container Image Linter for Security and helping build the Best-Practice Docker Image.
+
+[RustScan](https://github.com/RustScan/RustScan) is a Modern Port Scanner.
+
+[gosec](https://github.com/securego/gosec) is a Golang Security Checker that inspects source code for security problems by scanning the Go AST.
+
+[Prowler](https://github.com/prowler-cloud/prowler) is an Open Source security tool to perform AWS security best practices assessments, audits, incident response, continuous monitoring, hardening and forensics readiness. It contains more than 240 controls covering CIS, PCI-DSS, ISO27001, GDPR, HIPAA, FFIEC, SOC2, AWS FTR, ENS and custom security frameworks. 
 
 [Burp Suite](https://portswigger.net/burp) is a leading range of cybersecurity tools.
 
@@ -1116,66 +1150,68 @@ It is extended by a set of privacy-specific requirements, control objectives and
 
 [ClamAV](https://www.clamav.net/) is an open source antivirus engine for detecting trojans, viruses, malware & other malicious threats.
 
-## Open Source Security Learning Resources
+### Security Tutorials & Resources
 
-[Microsoft Open Source Software Security](https://www.microsoft.com/en-us/securityengineering/opensource)
+ - [Microsoft Open Source Software Security](https://www.microsoft.com/en-us/securityengineering/opensource)
 
-[Cloudflare Open Source Security](https://cloudflare.github.io)
+ - [Cloudflare Open Source Security](https://cloudflare.github.io)
 
-[The Seven Properties of Highly Secure Devices](https://www.microsoft.com/en-us/research/publication/seven-properties-highly-secure-devices/)
+ - [The Seven Properties of Highly Secure Devices](https://www.microsoft.com/en-us/research/publication/seven-properties-highly-secure-devices/)
 
-[How Layer 7 of the Internet Works](https://www.cloudflare.com/learning/ddos/what-is-layer-7/)
+ - [How Layer 7 of the Internet Works](https://www.cloudflare.com/learning/ddos/what-is-layer-7/)
 
-[The 7 Kinds of Security](https://www.veracode.com/sites/default/files/Resources/eBooks/7-kinds-of-security.pdf)
+ - [The 7 Kinds of Security](https://www.veracode.com/sites/default/files/Resources/eBooks/7-kinds-of-security.pdf)
 
-[The Libgcrypt Reference Manual](https://www.gnupg.org/documentation/manuals/gcrypt/)
+ - [The Libgcrypt Reference Manual](https://www.gnupg.org/documentation/manuals/gcrypt/)
 
-[The Open Web Application Security Project(OWASP) Foundation Top 10](https://owasp.org/www-project-top-ten/)
+ - [The Open Web Application Security Project(OWASP) Foundation Top 10](https://owasp.org/www-project-top-ten/)
 
-[Best Practices for Using Open Source Code from The Linux Foundation](https://www.linuxfoundation.org/blog/2017/11/best-practices-using-open-source-code/)
+ - [Best Practices for Using Open Source Code from The Linux Foundation](https://www.linuxfoundation.org/blog/2017/11/best-practices-using-open-source-code/)
+ 
+ ### Security Certifications
 
-[AWS Certified Security - Specialty Certification](https://aws.amazon.com/certification/certified-security-specialty/)
+ - [AWS Certified Security - Specialty Certification](https://aws.amazon.com/certification/certified-security-specialty/)
 
-[Microsoft Certified: Azure Security Engineer Associate](https://docs.microsoft.com/en-us/learn/certifications/azure-security-engineer)
+ - [Microsoft Certified: Azure Security Engineer Associate](https://docs.microsoft.com/en-us/learn/certifications/azure-security-engineer)
 
-[Google Cloud Certified Professional Cloud Security Engineer](https://cloud.google.com/certification/cloud-security-engineer)
+ - [Google Cloud Certified Professional Cloud Security Engineer](https://cloud.google.com/certification/cloud-security-engineer)
 
-[Cisco Security Certifications](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/security.html)
+ - [Cisco Security Certifications](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/security.html)
 
-[The Red Hat Certified Specialist in Security: Linux](https://www.redhat.com/en/services/training/ex415-red-hat-certified-specialist-security-linux-exam)
+ - [The Red Hat Certified Specialist in Security: Linux](https://www.redhat.com/en/services/training/ex415-red-hat-certified-specialist-security-linux-exam)
 
-[Linux Professional Institute LPIC-3 Enterprise Security Certification](https://www.lpi.org/our-certifications/lpic-3-303-overview)
+ - [Linux Professional Institute LPIC-3 Enterprise Security Certification](https://www.lpi.org/our-certifications/lpic-3-303-overview)
 
-[Cybersecurity Training and Courses from IBM Skills](https://www.ibm.com/skills/topics/cybersecurity/)
+ - [Cybersecurity Training and Courses from IBM Skills](https://www.ibm.com/skills/topics/cybersecurity/)
 
-[Cybersecurity Courses and Certifications by Offensive Security](https://www.offensive-security.com/courses-and-certifications/)
+ - [Cybersecurity Courses and Certifications by Offensive Security](https://www.offensive-security.com/courses-and-certifications/)
 
-[RSA Certification Program](https://community.rsa.com/community/training/certification)
+ - [RSA Certification Program](https://community.rsa.com/community/training/certification)
 
-[Check Point Certified Security Expert(CCSE) Certification](https://training-certifications.checkpoint.com/#/courses/Check%20Point%20Certified%20Expert%20(CCSE)%20R80.x)
+ - [Check Point Certified Security Expert(CCSE) Certification](https://training-certifications.checkpoint.com/#/courses/Check%20Point%20Certified%20Expert%20(CCSE)%20R80.x)
 
-[Check Point Certified Security Administrator(CCSA) Certification](https://training-certifications.checkpoint.com/#/courses/Check%20Point%20Certified%20Admin%20(CCSA)%20R80.x)
+ - [Check Point Certified Security Administrator(CCSA) Certification](https://training-certifications.checkpoint.com/#/courses/Check%20Point%20Certified%20Admin%20(CCSA)%20R80.x)
 
-[Check Point Certified Security Master (CCSM) Certification](https://training-certifications.checkpoint.com/#/courses/Check%20Point%20Certified%20Master%20(CCSM)%20R80.x)
+ - [Check Point Certified Security Master (CCSM) Certification](https://training-certifications.checkpoint.com/#/courses/Check%20Point%20Certified%20Master%20(CCSM)%20R80.x)
 
-[Certified Cloud Security Professional(CCSP) Certification](https://www.isc2.org/Certifications/CCSP)
+ - [Certified Cloud Security Professional(CCSP) Certification](https://www.isc2.org/Certifications/CCSP)
 
-[Certified Information Systems Security Professional (CISSP) Certification](https://www.isc2.org/Certifications/CISSP)
+ - [Certified Information Systems Security Professional (CISSP) Certification](https://www.isc2.org/Certifications/CISSP)
 
-[CCNP Routing and Switching](https://learningnetwork.cisco.com/s/ccnp-enterprise)
+ - [CCNP Routing and Switching](https://learningnetwork.cisco.com/s/ccnp-enterprise)
 
-[Certified Information Security Manager(CISM)](https://www.isaca.org/credentialing/cism)
+ - [Certified Information Security Manager(CISM)](https://www.isaca.org/credentialing/cism)
 
-[Wireshark Certified Network Analyst (WCNA)](https://www.wiresharktraining.com/certification.html)
+ - [Wireshark Certified Network Analyst (WCNA)](https://www.wiresharktraining.com/certification.html)
 
-[Juniper Networks Certification Program Enterprise (JNCP)](https://www.juniper.net/us/en/training/certification/)
+ - [Juniper Networks Certification Program Enterprise (JNCP)](https://www.juniper.net/us/en/training/certification/)
 
-[Security Training Certifications and Courses from Udemy](https://www.udemy.com/courses/search/?src=ukw&q=secuirty)
+ - [Security Training Certifications and Courses from Udemy](https://www.udemy.com/courses/search/?src=ukw&q=secuirty)
 
-[Security Training Certifications and Courses from Coursera](https://www.coursera.org/search?query=security&)
+ - [Security Training Certifications and Courses from Coursera](https://www.coursera.org/search?query=security&)
 
-[Security Certifications Training from Pluarlsight](https://www.pluralsight.com/browse/information-cyber-security/security-certifications)
-
+ - [Security Certifications Training from Pluarlsight](https://www.pluralsight.com/browse/information-cyber-security/security-certifications)
+ 
 
 ## Contribute
 
