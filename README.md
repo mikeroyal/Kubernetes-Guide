@@ -257,6 +257,24 @@
 
 [Etcd](https://etcd.io/) is a distributed key-value store that provides a reliable way to store data that needs to be accessed by a distributed system or cluster of machines. Etcd is used as the backend for service discovery and stores cluster state and configuration for Kubernetes.
 
+[nacos](https://github.com/alibaba/nacos) is an easy-to-use dynamic service discovery, configuration and service management platform for building cloud native applications.
+
+[Kuma](https://kuma.io/install) is a modern Envoy-based service mesh that can run on every cloud, in a single or multi-zone capacity, across both Kubernetes and VMs. Thanks to its broad universal workload support, combined with native support for Envoy as its data plane proxy technology (but with no Envoy expertise required), Kuma provides modern L4-L7 service connectivity, discovery, security, observability, routing and more across any service on any platform, databases included.
+
+[Open Service Mesh (OSM)](https://openservicemesh.io/) is a lightweight, extensible, cloud native service mesh that allows users to uniformly manage, secure, and get out-of-the-box observability features for highly dynamic microservice environments. 
+
+[kserve](https://github.com/kserve/kserve) is a Standardized Serverless ML Inference Platform on Kubernetes.
+
+[naftis](https://github.com/XiaoMi/naftis) is an awesome dashboard for Istio built with love.
+
+[Traefik Mesh](https://traefik.io/traefik-mesh) is a simple, yet full-featured service mesh. It is container-native and fits as your de-facto service mesh in your Kubernetes cluster. It supports the latest Service Mesh Interface specification [SMI](https://smi-spec.io/) that facilitates integration with pre-existing solution. 
+
+[Meshery](https://meshery.io/) is the cloud native management plane offering lifecycle, configuration, and performance management of Kubernetes, service meshes, and your workloads.
+
+[kubectx](https://kubectx.dev/) is a tool to switch between contexts (clusters) on kubectl faster.
+
+[Dapr](https://dapr.io/) is a portable, event-driven, runtime for building distributed applications across cloud and edge. 
+
 [OpenEBS](https://openebs.io/) is a Kubernetes-based tool to create stateful applications using Container Attached Storage.
 
 [Container Storage Interface (CSI)](https://www.architecting.it/blog/container-storage-interface/) is an API that lets container orchestration platforms like Kubernetes seamlessly communicate with stored data via a plug-in.
