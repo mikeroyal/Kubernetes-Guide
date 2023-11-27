@@ -19,6 +19,40 @@
     - [Books](https://github.com/mikeroyal/Kubernetes-Guide#books)
 
 2. [Kubernetes Tools and Projects](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#kubernetes-tools-and-projects)
+    * [Getting Started with OpenShift](#getting-started-with-openshift)
+    * [What is OpenShift?](#what-is-openshift)
+    * [Developer Resources](#Developer-Resources)
+        * [Certifications & Courses](#Certifications--Courses)
+        * [Books](#Books)
+    * [Source-to-Image(S2I) images for buildng your Apps](#source-to-image-s2i-images-for-programmingbuildng-your-apps)
+       
+        * [Java](#Java)
+        * [Python](#Python)
+        * [Golang](#Golang)
+        * [Ruby](#Ruby)
+        * [.NET Core](#net-core)
+        * [Node.js](#Nodejs)
+        * [Perl](#Perl)
+        * [PHP](#PHP)
+	
+   * [Builder Images for setting up Databases](#Builder-Images-for-setting-up-Databases)
+ 
+       * [MySQL](#mysql)
+       * [PostgreSQL](#postgresql)
+       * [MongoDB](#mongodb)
+       * [MariaDB](#mariadb)
+       * [Redis](#redis)
+       
+    * [Setting up Openshift on Microsoft Azure](#Setting-up-on-Microsoft-Azure)
+    * [Setting up Openshift on Google Cloud Platform (GCP)](#Setting-up-on-Google-Cloud-GCP)
+    * [Setting up Red Hat OpenShift Data Science](#Setting-up-Red-Hat-OpenShift-Data-Science)
+    * [Setting up Red Hat CodeReady Containers (CRC) OpenShift](https://github.com/mikeroyal/OpenShift-Guide#Red-Hat-CodeReady-Containers-CRC)
+    * [Setting up Podman](https://github.com/mikeroyal/OpenShift-Guide#setting-up-podman)
+    * [Setting up Buildah](https://github.com/mikeroyal/OpenShift-Guide#setting-up-buildah)
+    * [Setting up Skopeo](https://github.com/mikeroyal/OpenShift-Guide#setting-up-skopeo)
+    * [File systems](#file-systems)
+      
+  * [OpenShift Tools](#openshift-tools)
 
 3. [Go Development](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#go-development)
 
@@ -297,6 +331,819 @@
 [Flux CD](https://fluxcd.io/) is a tool that automatically ensures that the state of your Kubernetes cluster matches the configuration you've supplied in Git. It uses an operator in the cluster to trigger deployments inside Kubernetes, which means that you don't need a separate continuous delivery tool.
 
 [Platform9 Managed Kubernetes (PMK)](https://platform9.com/managed-kubernetes/) is a Kubernetes as a service that ensures fully automated Day-2 operations with 99.9% SLA on any environment, whether in data-centers, public clouds, or at the edge.
+
+## Getting Started with OpenShift
+
+[Back to the Top](#table-of-contents)
+
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/114321360-56cb3d80-9acf-11eb-89b7-102aa62a6967.png">
+  <br />
+</p>
+
+### What is OpenShift?
+
+[Red Hat OpenShift](https://www.openshift.com/) is an open source container application platform based on the Kubernetes container orchestrator for enterprise app development and deployment in the hybrid cloud Red Hat OpenShift, the open hybrid cloud platform built on Kubernetes. OpenShift can manage applications written in different languages and frameworks, such as Ruby, Node.js, Java, Perl, and Python.
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194815527-f79eed0d-7759-483d-8548-93577eaf4b4c.png">
+  <br />
+</p>
+ 
+**Red Hat OpenShift Development Architecture. Source: [Red Hat](https://www.redhat.com/en/resources/openshift-container-storage-datasheet)**
+
+### Developer Resources
+[Back to the Top](#table-of-contents)
+
+ * [Get Started with the CLI on OpenShift](https://docs.openshift.com/container-platform/3.9/cli_reference/get_started_cli.html)
+
+ * [CI/CD with OpenShift](https://www.openshift.com/blog/cicd-with-openshift)
+
+ * [AI/ML on OpenShift](https://www.openshift.com/learn/topics/ai-ml)
+
+ * [Red Hat OpenShift on VMware](https://www.openshift.com/learn/topics/openshift-on-vmware)
+
+ * [Understanding service mesh with OpenShift](https://docs.openshift.com/container-platform/4.1/service_mesh/service_mesh_arch/understanding-ossm.html)
+
+ * [IBM Redbooks | Red Hat](https://www.redbooks.ibm.com/domains/redhat)
+ 
+ * [DevOps Training & Tutorials | Red Hat Developer](https://developers.redhat.com/topics/devops)
+ 
+ * [All Topics for Software Developers | Red Hat Developer](https://developers.redhat.com/topics)
+
+ * [Develop Applications on OpenShift](https://developers.redhat.com/openshift)
+ 
+ * [Automate application security with OpenShift Pipelines](https://developers.redhat.com/topics/devsecops)
+
+ * [What is the difference between OpenShift and Kubernetes?](https://developers.redhat.com/openshift/difference-openshift-kubernetes/)
+
+ * [What books are available about OpenShift?](https://developers.redhat.com/openshift/openshift-books/)
+
+ * [Where can I try out OpenShift to see what it is like?](https://developers.redhat.com/openshift/try-openshift/)
+
+ * [How can I run OpenShift on my own computer for development?](https://developers.redhat.com/openshift/local-openshift/)
+
+ * [What hosting services are there that use OpenShift?](https://developers.redhat.com/openshift/hosting-openshift/)
+ 
+ ### Certifications & Courses
+[Back to the Top](#table-of-contents)
+ 
+ * [OpenShift Training from Red Hat](https://www.redhat.com/en/openshift-training)
+
+ * [OpenShift: Interactive Learning Portal](https://learn.openshift.com/)
+
+ * [Red Hat Certified Specialist in OpenShift Administration](https://www.redhat.com/en/services/certification/rhcs-paas)
+
+ * [Red Hat OpenShift Operator Certification](https://www.openshift.com/blog/red-hat-openshift-operator-certification)
+
+ * [Kubernetes and OpenShift: Community, Standards and Certifications](https://www.openshift.com/blog/kubernetes-and-openshift-community-standards-and-certifications)
+
+ * [OpenShift Courses | Udemy](https://www.udemy.com/topic/openshift/)
+
+ * [OpenShift - Deploying Applications course | Coursera](https://www.coursera.org/lecture/ibm-cloud-essentials/openshift-499y0)
+
+ * [Introduction to Containers w/ Docker, Kubernetes & OpenShift course | Coursera](https://www.coursera.org/learn/ibm-containers-docker-kubernetes-openshift)
+
+ * [Fundamentals of Containers, Kubernetes, and Red Hat OpenShift | edX](https://www.edx.org/course/fundamentals-of-containers-kubernetes-and-red-hat)
+
+ 
+### Books
+[Back to the Top](#table-of-contents)
+
+ * [OpenShift for Developers, Second Edition by Joshua Wood & Brian Tannous ](https://developers.redhat.com/e-books/openshift-for-developers)
+
+ * [Introducing Istio Service Mesh for Microservices by Burr Sutter and Christian Posta](https://developers.redhat.com/e-books/introducing-istio-service-mesh-microservices-old)
+
+ * [DevOps with OpenShift by Stefano Picozzi, Mike Hepburn & Noel O'Connor](https://developers.redhat.com/topics/devops)
+
+ * [Microservices for Java Developers: A Hands-on Introduction to Frameworks and Containers by Rafael Benevides](https://developers.redhat.com/e-books/microservices-java-developers-hands-introduction-frameworks-and-containers-old)
+
+ * [Migrating to Microservice Databases: From Relational Monolith to Distributed Data by Edson Yanaga](https://developers.redhat.com/e-books/migrating-microservice-databases-relational-monolith-distributed-data-old)
+
+ * [OpenShift 3 for Developers: A Guide for Impatient Beginners by Grant Shipley, Graham Dumpleton](https://developers.redhat.com/e-books/openshift-developers-guide-impatient-beginners-old)
+
+ * [Using the IBM Block Storage CSI Driver in a Red Hat OpenShift Environment](https://www.redbooks.ibm.com/abstracts/redp5613.html)
+
+ * [Storage Multi-tenancy for Red Hat OpenShift Container Platform with IBM Storage](https://www.redbooks.ibm.com/abstracts/redp5638.html)
+
+ * [An Implementation of Red Hat OpenShift Network Isolation Using Multiple Ingress Controllers](https://www.redbooks.ibm.com/abstracts/redp5641.html)
+
+ * [IBM Spectrum Scale as a Persistent Storage for Red Hat OpenShift on IBM Z Quick Installation Guide](https://www.redbooks.ibm.com/abstracts/redp5645.html)
+
+ * [Innovate at Scale and Deploy with Confidence in a Hybrid Cloud Environment](https://www.redbooks.ibm.com/abstracts/redp5621.html)
+ 
+### Source-to-Image (S2I) images for programming/buildng your Apps
+
+[Back to the Top](#table-of-contents)
+
+ #### Java
+ 
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194813422-cf1620e9-645a-4afd-a265-e36d8b79bb79.png">
+  <br />
+</p>
+
+   * [Java - Source-to-Image (S2I) Builder Images for OpenShift](https://docs.openshift.com/online/pro/using_images/s2i_images/java.html). 
+   
+ #### Python 
+ 
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194813429-cf638bb2-8d0f-48da-b775-9fce261e7737.png">
+  <br />
+</p> 
+   
+   * [Python - Source-to-Image (S2I) Builder Images for OpenShift](https://docs.openshift.com/online/pro/using_images/s2i_images/python.html). 
+   
+ #### Golang
+ 
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194813433-35da46b5-7f29-48a3-9710-addcd3dfef9f.png">
+  <br />
+</p>
+   
+   * [Golang- Source-to-Image (S2I) Builder Images for OpenShift](https://github.com/sclorg/golang-container). 
+    
+ #### Ruby
+ 
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194813455-ad2f2c3e-25cd-48e9-b65a-984a22063ba7.png">
+  <br />
+</p>
+   
+   * [Ruby - Source-to-Image (S2I) Builder Images for OpenShift](https://docs.openshift.com/online/pro/using_images/s2i_images/ruby.html). 
+   
+ #### .NET Core
+ 
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194813461-16b3eed5-ccdd-4e72-bb04-d0edb2ba358f.png">
+  <br />
+</p>
+   
+   * [.NET Core - Source-to-Image (S2I) Builder Images for OpenShift(https://docs.openshift.com/online/pro/using_images/s2i_images/dot_net_core.html).
+   
+ #### Node.js
+ 
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194813442-ba704ff7-a619-4771-9db9-48eb1b34036f.png">
+  <br />
+</p>
+   
+   * [Node.js - Source-to-Image (S2I) Builder Images for OpenShift](https://docs.openshift.com/online/pro/using_images/s2i_images/nodejs.html). 
+   
+ #### Perl
+ 
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194813447-03bac502-990c-4963-adc1-8b2bbfecd903.png">
+  <br />
+</p>
+   
+   * [Perl - Source-to-Image (S2I) Builder Images for OpenShift](https://docs.openshift.com/online/pro/using_images/s2i_images/perl.html). 
+   
+ #### PHP
+ 
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194813736-49ce45a7-3570-4eda-9253-a9b8bced6b5c.png">
+  <br />
+</p>
+    
+   * [PHP - Source-to-Image (S2I) Builder Images for OpenShift](https://docs.openshift.com/online/pro/using_images/s2i_images/php.html).
+   
+###  Builder Images for setting up Databases
+ 
+[Back to the Top](#table-of-contents)
+   
+ #### MySQL
+ 
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194814345-3916387f-f3f5-41bb-adf7-b40bae431b21.png">
+  <br />
+</p>
+   
+   * [MySQL - Database Images for OpenShift](https://docs.openshift.com/online/pro/using_images/db_images/mysql.html)
+   
+ #### PostgreSQL
+ 
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194814971-7961f638-dfdf-420b-82b2-b0e4a6fdd873.png">
+  <br />
+</p>
+   
+   * [PostgreSQL - Database Images for OpenShift](https://docs.openshift.com/online/pro/using_images/db_images/postgresql.html)
+   
+ #### MongoDB
+ 
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194814368-c27a71f7-0ccd-4827-9660-bfb4489537e9.png">
+  <br />
+</p>
+   
+   * [MongoDB - Database Images for OpenShift](https://docs.openshift.com/online/pro/using_images/db_images/mongodb.html)
+   
+ #### MariaDB
+ 
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194814354-adbbfd7f-9aab-4b11-bad4-bb68a0fff18c.png">
+  <br />
+</p>
+   
+   * [MariaDB - Database Images for OpenShift](https://docs.openshift.com/online/pro/using_images/db_images/mariadb.html)
+   
+ #### Redis
+ 
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194814382-d36a152e-a036-4884-baa9-4d0bc283d741.png">
+  <br />
+</p>
+   
+   * [Redis - Database Images for OpenShift](https://github.com/sclorg/redis-container)
+   
+### Setting up on Microsoft Azure
+
+[Back to the Top](#table-of-contents)
+
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/195019458-32fd1479-06f6-4593-836b-798bd5c3f332.png">
+  <br />
+</p>
+ 
+
+[Microsoft Azure Red Hat OpenShift](https://learn.microsoft.com/en-us/azure/openshift/) is a fully managed offering of OpenShift running in Azure. This service is jointly managed and supported by [Microsoft](https://www.microsoft.com) and [Red Hat](https://redhat.com/). 
+
+**Requirements:**
+
+ * [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/) version 2.6.0 or later.
+
+ * **56 vCPUs**, so you must increase the account limit.
+
+By default, each cluster creates the following instances:
+
+   * One bootstrap machine, which is removed after installation
+
+   * Three control plane machines
+
+   * Three compute machines
+
+Because the bootstrap, control plane, and worker machines use ```Standard_DS4_v2``` virtual machines, which use **8 vCPUs**, a default cluster requires **56 vCPUs**. The bootstrap node VM is used only during installation. To deploy more worker nodes, enable autoscaling, deploy large workloads, or use a different instance type, you must further increase the vCPU limit for your account to ensure that your cluster can deploy the machines that you require.
+
+* **1 VNet.** Each default cluster requires one Virtual Network (VNet), which contains two subnets.
+
+* **7 Network interfaces.** Each default cluster requires seven network interfaces. If you create more machines or your deployed workloads create load balancers, your cluster uses more network interfaces.
+
+* **2 Network security groups.** Each cluster creates network security groups for each subnet in the VNet. The default cluster creates network security groups for the control plane and for the compute node subnets:
+controlplane 	
+
+     * Allows the control plane machines to be reached on port 6443 from anywhere.
+node 	
+
+     * Allows worker nodes to be reached from the internet on ports 80 and 443.
+
+* **3 Network load balancers.** Each cluster creates the following load balancers:
+default 	
+
+   * Public IP address that load balances requests to ports 80 and 443 across worker machines
+internal 	
+
+   * Private IP address that load balances requests to ports 6443 and 22623 across control plane machines
+external 	
+
+   * Public IP address that load balances requests to port 6443 across control plane machines
+
+ * **Note:** If your applications create more Kubernetes LoadBalancer service objects, your cluster uses more load balancers.
+
+
+ * **2 Public IP addresses.** The public load balancer uses a public IP address. The bootstrap machine also uses a public IP address so that you can SSH into the machine to troubleshoot issues during installation. The IP address for the bootstrap node is used only during installation.
+
+ * **7 Private IP addresses.** The internal load balancer, each of the three control plane machines, and each of the three worker machines each use a private IP address.
+ 
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/195019497-a95eeb5c-e4c6-4e79-b25f-aedc9bd2fd0c.png">
+  <br />
+</p>
+ 
+Ingress traffic to an Azure Red Hat OpenShift cluster. Image Credit: [Red Hat](https://www.redhat.com/en/blog/how-deploy-azure-red-hat-openshift)
+ 
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/195019501-6b7df3b2-dcf3-4f92-abe2-427ab0200cac.png">
+  <br />
+</p>
+ 
+Egress traffic from an Azure Red Hat OpenShift cluster and connection to the cluster. Image Credit: [Red Hat](https://www.redhat.com/en/blog/how-deploy-azure-red-hat-openshift)
+
+#### Register the Resource Providers
+
+  * [Member and guest users.](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users)
+ 
+  * [Assign administrator and non-administrator roles to users with Azure Active Director.](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)
+
+**If you have multiple Azure subscriptions, specify the relevant subscription ID:**
+   
+```az account set --subscription <SUBSCRIPTION ID>```
+
+**Register the Microsoft.RedHatOpenShift resource provider:**
+
+```az provider register -n Microsoft.RedHatOpenShift --wait```
+
+**Register the Microsoft.Compute resource provider:**
+
+```az provider register -n Microsoft.Compute --wait```
+
+**Register the Microsoft.Storage resource provider:**
+
+```az provider register -n Microsoft.Storage --wait```
+
+**Register the Microsoft.Authorization resource provider:**
+
+```az provider register -n Microsoft.Authorization --wait```
+
+**Create a Resource Group:**
+
+```
+az group create \
+  --name $RESOURCEGROUP \
+  --location $LOCATION
+```
+
+**Creating a Virtual Network:**
+
+```
+az network vnet create \
+   --resource-group $RESOURCEGROUP \
+   --name aro-vnet \
+   --address-prefixes 10.0.0.0/22
+```
+**Adding empty subnet for the master nodes.**
+
+```
+az network vnet subnet create \
+  --resource-group $RESOURCEGROUP \
+  --vnet-name aro-vnet \
+  --name master-subnet \
+  --address-prefixes 10.0.0.0/23 \
+  --service-endpoints Microsoft.ContainerRegistry
+```
+**Adding empty subnet for the worker nodes.**
+
+```
+az network vnet subnet create \
+  --resource-group $RESOURCEGROUP \
+  --vnet-name aro-vnet \
+  --name worker-subnet \
+  --address-prefixes 10.0.2.0/23 \
+  --service-endpoints Microsoft.ContainerRegistry
+```
+
+**[Disable subnet private endpoint policies](https://learn.microsoft.com/en-us/azure/private-link/disable-private-link-service-network-policy) on the master subnet.**
+
+```
+az network vnet subnet update \
+  --name master-subnet \
+  --resource-group $RESOURCEGROUP \
+  --vnet-name aro-vnet \
+  --disable-private-link-service-network-policies true
+
+```
+
+**Creating a Cluster**
+
+```
+az aro create \
+  --resource-group $RESOURCEGROUP \
+  --name $CLUSTER \
+  --vnet aro-vnet \
+  --master-subnet master-subnet \
+  --worker-subnet worker-subnet
+
+```
+   
+### Setting up on Google Cloud (GCP)
+
+[Back to the Top](#table-of-contents)
+
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/195022791-7e494f28-3001-435f-ba5d-b903682e12a8.png">
+  <br />
+</p>
+ 
+#### Minimum Requirements:
+
+* [gcloud CLI](https://cloud.google.com/sdk/gcloud/) or [OpenShift CLI (oc)](https://access.redhat.com/downloads/content/290).
+ 
+**Master Nodes:**
+ 
+   * Minimum 4 vCPU (additional are strongly recommended).
+
+   * Minimum 16 GB RAM (additional memory is strongly recommended, especially if etcd is co-located on masters).
+
+   * Minimum 40 GB hard disk space for the file system .
+ 
+**Worker Nodes:**
+ 
+   * 1 vCPU.
+
+   * Minimum 8 GB RAM.
+
+   * Minimum 15 GB hard disk space for the file system.
+ 
+ * If you don’t have a GCP account already, [sign-up for Cloud Platform](https://cloud.google.com/free-trial/), setup billing and activate APIs.
+ 
+ * Setup a service account. A service account is a way to interact with your GCP resources by using a different identity than your primary login and is generally intended for server-to-server interaction. From the GCP Navigation Menu, click on **"Permissions."**
+
+   * Click on **"Service accounts."**
+   
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/195022808-4b4fbe2f-d04f-4ef1-b1a7-dda46df4869e.PNG">
+  <br />
+</p>
+     
+Click on **"Create service account,"** which will prompt you to enter a [service account](https://developers.google.com/identity/protocols/OAuth2ServiceAccount#overview) name. Provide a name for your project and click on **"Furnish a new private key."** The default **"JSON"** Key type should be left selected.
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/195022820-2794f3c3-93a7-4f06-b880-c6636c2f3616.PNG">
+  <br />
+</p>
+
+Once you click **"Create,"** a service account **“.json”** will be downloaded to your browser’s downloads location.
+
+ * **Important:** Like any credential, this represents an access mechanism to authenticate and use resources in your GCP account. Never place this file in a publicly accessible source repo (Public GitHub or GitLab).
+ 
+ using the JSON credential via a Kubernetes secret deployed to your OpenShift cluster. To do so, first perform a base64 encoding of your JSON credential file:
+ 
+ ``` base64 -i ~/path/to/downloads/credentials.json```
+ 
+ Keep the output (a very long string) ready for use in the next step, where you’ll replace ```‘BASE64_CREDENTIAL_STRING’``` in the pod example (below) with the output just captured from base64 encoding.
+ 
+ * **Note:** base64 is encoded (not encrypted) and can be readily reversed, so this file (with the base64 string) is just as confidential as the credential file above. 
+ 
+ Create the [Kubernetes secret](http://kubernetes.io/docs/user-guide/secrets/) inside your OpenShift Cluster. A secret is the proper place to make sensitive information available to pods running in your cluster (like passwords or the credentials downloaded in the previous step).
+ 
+ ```
+apiVersion: v1
+kind: Secret
+metadata:
+  name: google-services-secret
+type: Opaque
+data:
+  google-services.json: BASE64_CREDENTIAL_STRING
+```
+
+**Note:** Replace ```‘BASE64_CREDENTIAL_STRING’``` with the base64 output from the prior step. 
+
+**Deploy the secret to the cluster:**
+
+```oc create -f google-secret.yaml```
+
+ 
+### Setting up Red Hat OpenShift Data Science
+
+[Back to the Top](#table-of-contents)
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194743105-33439b99-2d5a-4d09-9131-4e90f7661e20.png">
+  <br />
+</p>
+
+[Red Hat® OpenShift® Data Science](https://www.redhat.com/en/technologies/cloud-computing/openshift/openshift-data-science) is a fully  managed cloud service for data scientists and developers of intelligent applications on [Red Hat OpenShift Dedicated](https://cloud.redhat.com/products/dedicated/) or [Red Hat OpenShift Service on AWS](https://cloud.redhat.com/products/amazon-openshift). It provides a fully supported sandbox in which to rapidly develop, train, and test machine learning (ML) models in the public cloud before deploying in production.
+
+ * [Red Hat OpenShift Data Science learning tutorials](https://developers.redhat.com/learn/openshift-data-science)
+ 
+ 
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194743106-b7fa780d-cc56-4ede-8029-925e8b16ea71.png">
+  <br />
+  Installing Red Hat OpenShift Data Science
+</p>
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194743108-bd53a59e-2c05-405e-85a6-d0c359818d9f.png">
+  <br />
+  Opening Red Hat OpenShift Data Science
+</p>
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194743109-59f39af3-b6c7-46a0-ae91-b6c498fe2972.png">
+  <br />
+  JuypterHub on Red Hat OpenShift Data Science
+</p>
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194743110-8a4216c6-a95e-49c6-aee3-a84ce40efb75.png">
+  <br />
+  Exploring Tools on Red Hat OpenShift Data Science
+</p>
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194743113-e1d06d91-8671-4884-ab7c-598a341ec1df.png">
+  <br />
+  Setting up JupyterHub Notebook Server
+</p>
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194743115-fcb9f17a-4697-433b-b83c-f9d924b32a70.png">
+  <br />
+  Creating a new Python 3 Notebook
+</p>
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194743120-7f8c723d-46cb-4286-9e47-b8edbbf1859a.png">
+  <br />
+  Python 3 JupyterHub Notebook
+</p>
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194743123-63442e0e-1339-4362-9f1f-7feb2063f8ee.png">
+  <br />
+  JupyterHub Notebook Sample Demo
+</p>
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194743125-c7f71b55-e90c-4438-afc6-0dfcaae5731c.png">
+  <br />
+  OpenShift Project Models
+</p>
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/194743454-f4a242db-b7d9-493e-9a6c-f88e05920186.png">
+  <br />
+  How OpenShift integrates with JupyterHub using Python - Source-to-Image (S2I)
+</p>
+ 
+ ### Red Hat CodeReady Containers (CRC)
+
+[Back to the Top](#table-of-contents)
+
+[Red Hat CodeReady Containers (CRC)](https://developers.redhat.com/content-gateway/rest/mirror/pub/openshift-v4/clients/crc/2.9.0) is a tool that provides a minimal, preconfigured OpenShift 4 cluster on a laptop or desktop machine for development and testing purposes. CRC is delivered as a platform inside of the VM.
+
+ * **odo (OpenShift Do)**, a CLI tool for developers, to manage application components on the OpenShift Container Platform.
+ 
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/193531714-a4316c2c-4ba9-4d31-86cf-7a3edc6f6375.png">
+  <br />
+</p>
+
+**System Requirements:**
+
+   * **OS:** CentOS Stream 8/RHEL 8/Fedora or later (the latest 2 releases).
+   * **Download:** [pull-secret](https://cloud.redhat.com/openshift/install/crc/installer-provisioned?intcmp=701f20000012ngPAAQ)
+   * **Login:** [Red Hat account](https://access.redhat.com/login)
+
+**Other physical requirements include:**
+
+   * Four virtual CPUs (**4 vCPUs**)
+   * 10GB of memory (**RAM**)
+   * 40GB of storage space
+
+**To set up CodeReady Containers, start by creating the ```crc``` directory, and then download and extract the ```crc``` package:**
+
+```mkdir /home/<user>/crc```
+
+```wget https://mirror.openshift.com/pub/openshift-v4/clients/crc/latest/crc-linux-amd64.tar.xz```
+
+```tar -xvf crc-linux-amd64.tar.xz```
+
+**Next, move the files to the crc directory and remove the downloaded package(s):**
+
+```mv /home/<user>/crc-linux-<version>-amd64/* /home/<user>/crc```
+
+```rm /home/<user>/crc-linux-amd64.tar.xz```
+
+```rm -r /home/<user>/crc-linux-<version>-amd64```
+
+**Change to the ```crc``` directory, make ```crc``` executable, and export your ```PATH``` like this:**
+
+```cd /home/<user>/crc```
+
+```chmod +x crc```
+
+```export PATH=$PATH:/home/<user>/crc```
+
+**Set up and start the cluster:**
+
+```crc setup```
+
+```crc start -p /<path-to-the-pull-secret-file>/pull-secret.txt```
+
+**Set up the OC environment:**
+
+```crc oc-env```
+
+```eval $(crc oc-env)```
+
+**Log in as the developer user:**
+
+```oc login -u developer -p developer https://api.crc.testing:6443```
+
+```oc logout```
+
+**And then, log in as the platform’s admin:**
+
+```oc login -u kubeadmin -p password https://api.crc.testing:6443```
+
+```oc logout```
+
+#### Interacting with the cluster. The most common ways include:
+
+**Starting the graphical web console:**
+
+```crc console```
+
+**Display the cluster’s status:**
+
+ ```crc status```
+
+**Shut down the OpenShift cluster:**
+
+```crc stop```
+
+**Delete or kill the OpenShift cluster:**
+
+```crc delete```
+
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/193534587-c86d546f-814b-420d-ac45-15d5c2ca6ede.png">
+  <br />
+</p>
+
+### Setting up Podman
+
+[Back to the Top](#table-of-contents)
+
+[Podman (the POD manager)](https://podman.io/) is an open source tool for developing, managing, and running containers on your Linux systems. It also manages the entire container ecosystem using the libpod library.  Podman’s daemonless and inclusive architecture makes it a more secure and accessible option for container management, and its accompanying tools and features, such as [Buildah](https://www.redhat.com/en/topics/containers/what-is-buildah) and [Skopeo](https://www.redhat.com/en/topics/containers/what-is-skopeo), allow developers to customize their container environments to best suit their needs. 
+
+  * [Libpod](https://pkg.go.dev/github.com/containers/podman/libpod) provides a library for applications looking to use the Container Pod concept made  popular by Kubernetes.
+  
+ **Installing Podman:**
+
+ * Fedora: ```sudo dnf install podman```
+ * CentOS Stream: ```sudo dnf install buildah```
+ * Ubuntu 20.04 or later: ```sudo apt install podman```
+ * Debian 11 (bullseye) or later, or sid/unstable: ```sudo apt install podman```
+ * openSUSE: ```sudo zypper install podman```
+ * ArchLinux: ```sudo pacman -S podman``` and then tweaks for rootless 
+
+[Podman Desktop](https://github.com/containers/podman-desktop) is a tool to manage Podman and other container engines from a single UI and tray local environment.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/45159366/194254969-e1950739-299d-45a4-8d7f-78750ea12d13.png">
+  <br />
+  Podman Desktop
+</p>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/45159366/193426691-d47b65df-bd28-4c60-82f8-282005392556.png">
+  <br />
+ Podman
+</p>
+
+### Setting up Buildah
+
+[Back to the Top](#table-of-contents) 
+
+[Buildah](https://buildah.io/) is an open source, Linux-based tool that can build Docker- and Kubernetes-compatible images, and is easy to incorporate into scripts and build pipelines. In addition, Buildah has overlap functionality with [Podman](https://podman.io/), [Skopeo](https://github.com/containers/skopeo), and [CRI-O](https://cri-o.io/).
+
+ * Fedora: ```sudo dnf -y install buildah```
+ * CentOS Stream: ```sudo dnf -y install buildah```
+ * Ubuntu 20.04 or later: ```sudo apt install buildah```
+ * Debian 11 (bullseye) or later, or sid/unstable: ```sudo apt install -y buildah```
+ * openSUSE: ```sudo zypper install buildah```
+ * ArchLinux: ```sudo pacman -S buildah``` and then tweaks for rootless 
+ 
+ <p align="center">
+<img src="https://user-images.githubusercontent.com/45159366/193426954-22a0dcd8-5911-448b-b538-f1569ec20b35.png">
+  <br />
+ Buildah
+</p>
+
+### Setting up Skopeo
+
+[Back to the Top](#table-of-contents)
+
+[Skopeo](https://github.com/containers/skopeo) is a tool for manipulating, inspecting, signing, and transferring container images and image repositories on Linux systems, Windows and MacOS. In addition, Skopeo has overlap functionality with [Podman](https://podman.io/), [Buildah](https://buildah.io/), and [CRI-O](https://cri-o.io/).
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/45159366/194253663-80663090-0ed1-4ac9-8d2b-b1fb390b7be8.png">
+  <br />
+</p>
+
+**Installing Skopeo:**
+
+ * Fedora: ```sudo dnf install skopeo```
+ * CentOS Stream: ```sudo dnf -y install skopeo```
+ * Ubuntu 20.04 or later: ```sudo apt install skopeo```
+ * Debian 11 (bullseye) or later, or sid/unstable: ```sudo apt install skopeo```
+ * openSUSE: ```sudo zypper install skopeo```
+ * Alpine Linux: ```sudo apk add skopeo```
+ * ArchLinux: ```sudo pacman -S skopeo``` and then tweaks for rootless 
+ * Nix/NixOS: ```$ nix-env -i skopeo```
+ * MacOS: ```brew install skopeo```
+ 
+**Skopeo Usage:**
+
+```
+$ skopeo --help
+
+Various operations with container images and container image registries
+
+Usage:
+  skopeo [command]
+
+Available Commands:
+  copy                                       Copy an IMAGE-NAME from one location to another
+  delete                                     Delete image IMAGE-NAME
+  help                                       Help about any command
+  inspect                                    Inspect image IMAGE-NAME
+  list-tags                                  List tags in the transport/repository specified by the REPOSITORY-NAME
+  login                                      Login to a container registry
+  logout                                     Logout of a container registry
+  manifest-digest                            Compute a manifest digest of a file
+  standalone-sign                            Create a signature using local files
+  standalone-verify                          Verify a signature using local files
+  sync                                       Synchronize one or more images from one location to another
+  ```
+
+ 
+### File systems
+
+[Back to the Top](#table-of-contents)
+
+[CIFS (Common Internet File System)](https://cifs.com/) is a network filesystem protocol used for providing shared access to files and printers between machines on the network. The client application can read, write, edit and even remove files on the remote server. 
+
+[Network File System (NFS)](https://learn.microsoft.com/en-us/windows-server/storage/nfs/nfs-overview) is a protocol that provides a file sharing solution for enterprises that have heterogeneous environments that include both Windows and non-Windows computers. It's most notable for its host authentication, it’s simple to setup, and makes it possible to connect to another service using an IP address only.
+
+**Additional benefits of NFS file share include:**
+
+   * NFS provides a central management.
+   * NFS allows for a user to log into any server and have access to their files transparently.
+   * It’s been around for a long time, so it comes with familiarity in terms of applications.
+   * No manual refresh needed for new files.
+   * It Can be secured with firewalls and Kerberos.
+
+[GlusterFS](https://www.gluster.org/) is a free and open source scalable network filesystem. Gluster is a scalable network filesystem. Using common off-the-shelf hardware, you can create large, distributed storage solutions for media streaming, data analysis, and other data- and bandwidth-intensive tasks.
+
+[Ceph](https://ceph.io/) is a software-defined storage solution designed to address the object, block, and file storage needs of data centers adopting open source as the new norm for high-growth block storage, object stores and data lakes. Ceph provides enterprise scalable storage while keeping [CAPEX](https://corporatefinanceinstitute.com/resources/knowledge/modeling/how-to-calculate-capex-formula/) and [OPEX](https://www.investopedia.com/terms/o/operating_expense.asp) costs in line with underlying bulk commodity disk prices.
+
+[Hadoop Distributed File System (HDFS)](https://www.ibm.com/analytics/hadoop/hdfs) is a distributed file system that handles large data sets running on commodity hardware. It is used to scale a single Apache Hadoop cluster to hundreds (and even thousands) of nodes. HDFS is one of the major components of Apache Hadoop, the others being [MapReduce](https://www.ibm.com/analytics/hadoop/mapreduce) and [YARN](https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html).
+
+[ZFS](https://docs.oracle.com/cd/E19253-01/819-5461/zfsover-2/) is an enterprise-ready open source file system and volume manager with unprecedented flexibility and an uncompromising commitment to data integrity.
+
+[OpenZFS](https://openzfs.org/wiki/Main_Page ) is an open-source storage platform. It includes the functionality of both traditional file systems and volume manager. It has many advanced features including:
+
+  - Protection against data corruption.
+  - Integrity checking for both data and metadata.
+  - Continuous integrity verification and automatic "self-healing" repair.
+
+[Btrfs](https://btrfs.wiki.kernel.org/index.php/Main_Page) is a modern copy on write (CoW) filesystem for Linux aimed at implementing advanced features while also focusing on fault tolerance, repair and easy administration. Its main features and benefits are:
+
+  * Snapshots which do not make the full copy of files
+  * RAID - support for software-based RAID 0, RAID 1, RAID 10
+  * Self-healing - checksums for data and metadata, automatic detection of silent data corruptions
+  
+[Bcachefs](https://bcachefs.org/) is an advanced new filesystem for Linux, with an emphasis on reliability and robustness and the complete set of features one would expect from a modern filesystem. Scalability has been tested to 50+ TB, will eventually scale far higher. 
+
+[Ext4](https://ext4.wiki.kernel.org/index.php/Ext4_Howto) is a journaling file system for Linux, developed as the successor to ext3
+
+[Squashfs](https://www.kernel.org/doc/html/latest/filesystems/squashfs.html) is a compressed read-only filesystem for Linux. It uses zlib, lz4, lzo, or xz compression to compress files, inodes and directories. Inodes in the system are very small and all blocks are packed to minimize data overhead.
+
+[NTFS(New Technology File System)](https://docs.microsoft.com/en-us/windows-server/storage/file-server/ntfs-overview) is the primary file system for recent versions of Windows and Windows Server—provides a full set of features including security descriptors, encryption, disk quotas, and rich metadata, and can be used with Cluster Shared Volumes (CSV) to provide continuously available volumes that can be accessed simultaneously from multiple nodes of a failover cluster.
+
+## OpenShift Tools
+
+[Back to the Top](#table-of-contents)
+
+
+[OpenShift CLI (oc)](https://docs.openshift.com/container-platform/4.4/cli_reference/openshift_cli/getting-started-cli.html) is a command line interface tool that extends the capabilities of kubectl with [many convenience functions](https://docs.openshift.com/container-platform/4.4/cli_reference/openshift_cli/usage-oc-kubectl.html) that make interacting with both Kubernetes and OpenShift clusters easier.
+
+[OpenShift Serverless CLI (kn)](https://docs.openshift.com/container-platform/4.4/serverless/serverless-getting-started.html) is a command line interface tool to deploy serverless applications, then you’ll want access and control via the kn command. 
+
+[OpenShift Pipelines CLI (tkn)](https://docs.openshift.com/container-platform/4.4/pipelines/understanding-openshift-pipelines.html) is a command line interface tool for using Tekton to provide cloud-native CI/CD functionality within the cluster. The tkn command is used to manage the functionality from the CLI.
+
+[Red Hat CodeReady Containers](https://developers.redhat.com/products/codeready-containers) is an option to host a local, all-in-one OpenShift 4 cluster on your workstation. CodeReady Containers replaces [minishift](https://www.okd.io/minishift/), used to run OpenShift 3 clusters on your workstation, as a quick and easy method of creating test and development clusters. 
+
+[Helm CLI](https://docs.openshift.com/container-platform/4.4/cli_reference/helm_cli/getting-started-with-helm-on-openshift-container-platform.html) is a command line interface tool for deploying and managing Kubernetes applications to your clusters. 
+
+[OpenShift Hive](https://github.com/openshift/hive) is an operator which runs as a service on top of Kubernetes/OpenShift. The Hive service can be used to provision and perform initial configuration of OpenShift 4 clusters.
+
+[OpenShift Service Mesh](https://www.openshift.com/blog/introducing-openshift-service-mesh-2.0) is a tool that provides a layer on top of OpenShift for securely connecting services in a consistent manner. This provides centralized control, security and observability across your services without having to modify your applications.
+
+[Azure Red Hat OpenShift](https://azure.microsoft.com/en-us/services/openshift/) is a flexible, self-service deployment of fully managed OpenShift clusters. Maintain regulatory compliance and focus on your application development, while your master, infrastructure, and application nodes are patched, updated, and monitored by both Microsoft and Red Hat.
+
+[Red Hat OpenShift Service on AWS (ROSA)](https://www.openshift.com/products/amazon-openshift) is a fully-managed and jointly supported Red Hat OpenShift offering that combines the power of Red Hat OpenShift, the industry's most comprehensive enterprise Kubernetes platform, and the AWS public cloud.
+
+[Red Hat OpenShift on Google Cloud](https://cloud.google.com/solutions/partners/openshift-on-gcp) is a fully-managed and jointly supported Red Hat OpenShift offering that enables you to deploy stateful and stateless apps with nearly any language, framework, database, or service. It gives you a hosted environment entirely on Google Cloud. A hybrid environment where you maintain part of your workload on-premises or in a private hosting environment and migrate the rest to Google Cloud.
+
+[Red Hat® Quay](https://www.openshift.com/products/quay) is a secure, private container registry that builds, analyzes and distributes container images. It provides a high level of automation and customization. 
+
+[Kata Operator](https://github.com/openshift/kata-operator) is an operator to perform lifecycle management (install/upgrade/uninstall) of [Kata Runtime](https://katacontainers.io/) on Openshift as well as Kubernetes cluster.
+
+[Open Container Initiative](https://opencontainers.org/about/overview/) is an open governance structure for the express purpose of creating open industry standards around container formats and runtimes.
+
+[Buildah](https://buildah.io/) is a command line tool to build Open Container Initiative (OCI) images. It can be used with Docker, Podman, Kubernetes.
+
+[Podman](https://podman.io/) is a daemonless, open source, Linux native tool designed to make it easy to find, run, build, share and deploy applications using Open Containers Initiative (OCI) Containers and Container Images. Podman provides a command line interface (CLI) familiar to anyone who has used the Docker Container Engine.
+
+[Containerd](https://containerd.io)is a daemon that manages the complete container lifecycle of its host system, from image transfer and storage to container execution and supervision to low-level storage to network attachments and beyond. It is available for Linux and Windows. 
+
+[OKD](https://okd.io/) is a community distribution of Kubernetes optimized for continuous application development and multi-tenant deployment. OKD adds developer and operations-centric tools on top of Kubernetes to enable rapid application development, easy deployment and scaling, and long-term lifecycle maintenance for small and large teams.
+
 
 # Go Development
 
