@@ -13,16 +13,22 @@
 
 # Table of Contents
 
-1. [Kubernetes Learning Resources](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#kubernetes-learning-resources)
-    - [Developer Resources](https://github.com/mikeroyal/Kubernetes-Guide#developer-resources)
-    - [Kubernetes Courses & Certifications](https://github.com/mikeroyal/Kubernetes-Guide#kubernetes-courses--certifications)
-    - [Books](https://github.com/mikeroyal/Kubernetes-Guide#books)
+1. [Getting Started with Kubernetes](#getting-started-with-kubernetes)
+    - [Developer Resources](#developer-resources)
+    - [Kubernetes Courses & Certifications](#kubernetes-courses--certifications)
+    - [Books](#kubernetes-books)
     - [YouTube Tutorials](#youtube-tutorials)
+    - [Red Hat CodeReady Containers (CRC) OpenShift on WSL](#red-Hat-CodeReady-Containers-CRC)
+    - [Setting up Podman on WSL](#setting-up-podman)
+    - [Setting up Buildah on WSL](#setting-up-buildah)
+    - [Installing Kubernetes on WSL with Rancher Desktop](#installing-kubernetes-on-wsl-with-rancher-desktop)
+    - [Installing Kubernetes on WSL with Docker Desktop](#installing-kubernetes-on-wsl-with-docker-desktop)
+    - [Installing Kubernetes on WSL with Microk8s](#installing-kubernetes-on-wsl-with-microk8s)
 
-2. [Kubernetes Tools and Projects](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#kubernetes-tools-and-projects)
+2. [Kubernetes Tools and Projects](#kubernetes-tools-and-projects)
     * [Getting Started with OpenShift](#getting-started-with-openshift)
     * [What is OpenShift?](#what-is-openshift)
-    * [Developer Resources](#Developer-Resources)
+    * [OpenShift Developer Resources](#openshift-developer-resources)
     * [Source-to-Image(S2I) images for buildng your Apps](#source-to-image-s2i-images-for-programmingbuildng-your-apps)
        
         * [Java](#Java)
@@ -34,7 +40,7 @@
         * [Perl](#Perl)
         * [PHP](#PHP)
 	
-   * [Builder Images for setting up Databases](#Builder-Images-for-setting-up-Databases)
+   * [Builder Images for setting up Databases](#builder-images-for-setting-up-Databases)
  
        * [MySQL](#mysql)
        * [PostgreSQL](#postgresql)
@@ -42,13 +48,13 @@
        * [MariaDB](#mariadb)
        * [Redis](#redis)
        
-    * [Setting up Openshift on Microsoft Azure](#Setting-up-on-Microsoft-Azure)
-    * [Setting up Openshift on Google Cloud Platform (GCP)](#Setting-up-on-Google-Cloud-GCP)
-    * [Setting up Red Hat OpenShift Data Science](#Setting-up-Red-Hat-OpenShift-Data-Science)
-    * [Setting up Red Hat CodeReady Containers (CRC) OpenShift](https://github.com/mikeroyal/OpenShift-Guide#Red-Hat-CodeReady-Containers-CRC)
-    * [Setting up Podman](https://github.com/mikeroyal/OpenShift-Guide#setting-up-podman)
-    * [Setting up Buildah](https://github.com/mikeroyal/OpenShift-Guide#setting-up-buildah)
-    * [Setting up Skopeo](https://github.com/mikeroyal/OpenShift-Guide#setting-up-skopeo)
+    * [Setting up Openshift on Microsoft Azure](#setting-up-on-Microsoft-Azure)
+    * [Setting up Openshift on Google Cloud Platform (GCP)](#setting-up-on-Google-Cloud-GCP)
+    * [Setting up Red Hat OpenShift Data Science](#setting-up-Red-Hat-OpenShift-Data-Science)
+    * [Setting up Red Hat CodeReady Containers (CRC) OpenShift](#red-Hat-CodeReady-Containers-CRC)
+    * [Setting up Podman](#setting-up-podman)
+    * [Setting up Buildah](#setting-up-buildah)
+    * [Setting up Skopeo](#setting-up-skopeo)
     * [File systems](#file-systems)
       
   * [OpenShift Tools](#openshift-tools)
@@ -76,7 +82,7 @@
   <br />
 </p>
 
-# Kubernetes Learning Resources
+# Getting Started with Kubernetes
 [Back to the Top](#table-of-contents)
 
 [Kubernetes (K8s)](https://kubernetes.io/) is an open-source system for automating deployment, scaling, and management of containerized applications.
@@ -165,7 +171,7 @@
 
  - [Scalable Microservices with Kubernetes course from Udacity](https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615)
 
-### Books
+### Kubernetes Books
 [Back to the Top](#table-of-contents)
 
 - [Kubernetes for Full-Stack Developers by Digital Ocean](https://assets.digitalocean.com/books/kubernetes-for-full-stack-developers.pdf)
@@ -364,7 +370,7 @@
  
 **Red Hat OpenShift Development Architecture. Source: [Red Hat](https://www.redhat.com/en/resources/openshift-container-storage-datasheet)**
 
-### Developer Resources
+### OpenShift Developer Resources
 [Back to the Top](#table-of-contents)
 
  * [Get Started with the CLI on OpenShift](https://docs.openshift.com/container-platform/3.9/cli_reference/get_started_cli.html)
