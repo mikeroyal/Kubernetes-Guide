@@ -17,13 +17,12 @@
     - [Developer Resources](https://github.com/mikeroyal/Kubernetes-Guide#developer-resources)
     - [Kubernetes Courses & Certifications](https://github.com/mikeroyal/Kubernetes-Guide#kubernetes-courses--certifications)
     - [Books](https://github.com/mikeroyal/Kubernetes-Guide#books)
+    - [YouTube Tutorials](#youtube-tutorials)
 
 2. [Kubernetes Tools and Projects](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#kubernetes-tools-and-projects)
     * [Getting Started with OpenShift](#getting-started-with-openshift)
     * [What is OpenShift?](#what-is-openshift)
     * [Developer Resources](#Developer-Resources)
-        * [Certifications & Courses](#Certifications--Courses)
-        * [Books](#Books)
     * [Source-to-Image(S2I) images for buildng your Apps](#source-to-image-s2i-images-for-programmingbuildng-your-apps)
        
         * [Java](#Java)
@@ -78,7 +77,7 @@
 </p>
 
 # Kubernetes Learning Resources
-[Back to the Top](https://github.com/mikeroyal/Kubernetes-Guide#table-of-contents)
+[Back to the Top](#table-of-contents)
 
 [Kubernetes (K8s)](https://kubernetes.io/) is an open-source system for automating deployment, scaling, and management of containerized applications.
 
@@ -87,7 +86,7 @@
 **Building Highly-Availability(HA) Clusters with kubeadm. Source: [Kubernetes.io](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/)**
 
 ### Developer Resources
-[Back to the Top](https://github.com/mikeroyal/Kubernetes-Guide#table-of-contents)
+[Back to the Top](#table-of-contents)
 
  - [Kubernetes Certifications](https://kubernetes.io/training/)
 
@@ -144,7 +143,7 @@
  - [Kubernetes Playground by Katacoda](https://www.katacoda.com/courses/kubernetes/playground)
 
 ### Kubernetes Courses & Certifications
-[Back to the Top](https://github.com/mikeroyal/Kubernetes-Guide#table-of-contents)
+[Back to the Top](#table-of-contents)
 
  - [Kubernetes Training & Certifications](https://kubernetes.io/training/)
  
@@ -167,7 +166,7 @@
  - [Scalable Microservices with Kubernetes course from Udacity](https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615)
 
 ### Books
-[Back to the Top](https://github.com/mikeroyal/Kubernetes-Guide#table-of-contents)
+[Back to the Top](#table-of-contents)
 
 - [Kubernetes for Full-Stack Developers by Digital Ocean](https://assets.digitalocean.com/books/kubernetes-for-full-stack-developers.pdf)
 
@@ -203,10 +202,23 @@
  
  - [Hands-on Kubernetes on Azure: Use Azure Kubernetes Service to automate management, scaling, and deployment of containerized apps](https://www.amazon.com/Hands-Kubernetes-Azure-containerized-applications-ebook/dp/B095H26VFY/ref=sr_1_11?crid=15963283P4C0V&keywords=kubernetes&qid=1653935057&s=books&sprefix=kubernetes%2Cstripbooks%2C174&sr=1-11)
 
+### YouTube Tutorials
+[Back to the Top](#table-of-contents)
+
+[![Kubernetes in 2023](https://ytcards.demolab.com/?id=kGrpLKNi4ZI&lang=en&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&width=240 "Kubernetes in 2023")](https://www.youtube.com/watch?v=kGrpLKNi4ZI)
+[![Cloud Native Live: Introduction to platform engineering maturity model](https://ytcards.demolab.com/?id=Oe_mhDtb22M&lang=en&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&width=240 "Cloud Native Live: Introduction to platform engineering maturity model")](https://www.youtube.com/watch?v=Oe_mhDtb22M)
+[![Containers vs Pods](https://ytcards.demolab.com/?id=vxtq_pJp7_A&lang=en&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&width=240 "Containers vs Pods")](https://www.youtube.com/watch?v=vxtq_pJp7_A)
+[![Kubernetes Roadmap - Complete Step-by-Step Learning Path](https://ytcards.demolab.com/?id=S8eX0MxfnB4&lang=en&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&width=240 "Kubernetes Roadmap - Complete Step-by-Step Learning Path")](https://www.youtube.com/watch?v=S8eX0MxfnB4)
+[![Kubernetes Course - Full Beginners Tutorial (Containerize Your Apps!)](https://ytcards.demolab.com/?id=d6WC5n9G_sM&lang=en&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&width=240 "Kubernetes Course - Full Beginners Tutorial (Containerize Your Apps!)")](https://www.youtube.com/watch?v=d6WC5n9G_sM)
+[![What is Kubernetes | Kubernetes explained in 15 mins](https://ytcards.demolab.com/?id=VnvRFRk_51k&lang=en&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&width=240 "What is Kubernetes | Kubernetes explained in 15 mins")](https://www.youtube.com/watch?v=VnvRFRk_51k)
+[![Do NOT Learn Kubernetes Without Knowing These Concepts...](https://ytcards.demolab.com/?id=wXuSqFJVNQA&lang=en&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&width=240 "Do NOT Learn Kubernetes Without Knowing These Concepts...")](https://www.youtube.com/watch?v=wXuSqFJVNQA)
+[![Docker Containers and Kubernetes Fundamentals – Full Hands-On Course](https://ytcards.demolab.com/?id=kTp5xUtcalw&lang=en&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&width=240 "Docker Containers and Kubernetes Fundamentals – Full Hands-On Course")](https://www.youtube.com/watch?v=kTp5xUtcalw)
+[![Kubernetes Explained in 100 Seconds](https://ytcards.demolab.com/?id=PziYflu8cB8&lang=en&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&width=240 "Kubernetes Explained in 100 Seconds")](https://www.youtube.com/watch?v=PziYflu8cB8)
+[![Docker vs Kubernetes, what's better in a Homelab?](https://ytcards.demolab.com/?id=n-fAf2mte6M&lang=en&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&width=240 "Docker vs Kubernetes, what's better in a Homelab?")](https://www.youtube.com/watch?v=n-fAf2mte6M)
 
 # Kubernetes Tools, Frameworks, and Projects 
 
-[Back to the Top](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#table-of-contents)
+[Back to the Top](#table-of-contents)
 
 [Open Container Initiative](https://opencontainers.org/about/overview/) is an open governance structure for the express purpose of creating open industry standards around container formats and runtimes.
 
