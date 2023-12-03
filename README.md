@@ -7,6 +7,9 @@
  <a href="https://github.com/mikeroyal?tab=followers">
          <img alt="followers" title="Follow me for Updates" src="https://custom-icon-badges.demolab.com/github/followers/mikeroyal?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=person-add&label=Follow&logoColor=white"/></a> 	
 
+![Maintenance](https://img.shields.io/maintenance/yes/2023?style=for-the-badge)
+![Last-Commit](https://img.shields.io/github/last-commit/mikeroyal/kubernetes-guide?style=for-the-badge)
+
 #### A guide covering Kubernetes including the applications and tools that will make you a better and more efficient Kubernetes developer.
 
 **Note: You can easily convert this markdown file to a PDF in [VSCode](https://code.visualstudio.com/) using this handy extension [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf).**
@@ -18,9 +21,9 @@
     - [Kubernetes Courses & Certifications](#kubernetes-courses--certifications)
     - [Books](#kubernetes-books)
     - [YouTube Tutorials](#youtube-tutorials)
-    - [Red Hat CodeReady Containers (CRC) OpenShift on WSL](#red-Hat-CodeReady-Containers-CRC)
-    - [Setting up Podman on WSL](#setting-up-podman)
-    - [Setting up Buildah on WSL](#setting-up-buildah)
+    - [Red Hat CodeReady Containers (CRC) OpenShift on WSL](#red-Hat-CodeReady-Containers-CRC-on-wsl)
+    - [Setting up Podman on WSL](#setting-up-podman-on-wsl)
+    - [Setting up Buildah on WSL](#setting-up-buildah-on-wsl)
     - [Installing Kubernetes on WSL with Rancher Desktop](#installing-kubernetes-on-wsl-with-rancher-desktop)
     - [Installing Kubernetes on WSL with Docker Desktop](#installing-kubernetes-on-wsl-with-docker-desktop)
     - [Installing Kubernetes on WSL with Microk8s](#installing-kubernetes-on-wsl-with-microk8s)
@@ -57,7 +60,7 @@
     * [Setting up Skopeo](#setting-up-skopeo)
     * [File systems](#file-systems)
       
-  * [OpenShift Tools](#openshift-tools)
+   * [OpenShift Tools](#openshift-tools)
 
 3. [Go Development](https://github.com/mikeroyal/Kubernetes-Guide/blob/main/README.md#go-development)
 
@@ -221,6 +224,274 @@
 [![Docker Containers and Kubernetes Fundamentals – Full Hands-On Course](https://ytcards.demolab.com/?id=kTp5xUtcalw&lang=en&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&width=240 "Docker Containers and Kubernetes Fundamentals – Full Hands-On Course")](https://www.youtube.com/watch?v=kTp5xUtcalw)
 [![Kubernetes Explained in 100 Seconds](https://ytcards.demolab.com/?id=PziYflu8cB8&lang=en&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&width=240 "Kubernetes Explained in 100 Seconds")](https://www.youtube.com/watch?v=PziYflu8cB8)
 [![Docker vs Kubernetes, what's better in a Homelab?](https://ytcards.demolab.com/?id=n-fAf2mte6M&lang=en&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&width=240 "Docker vs Kubernetes, what's better in a Homelab?")](https://www.youtube.com/watch?v=n-fAf2mte6M)
+
+### Red Hat CodeReady Containers (CRC) on WSL
+
+[Back to the Top](#table-of-contents)
+
+[Red Hat CodeReady Containers (CRC)](https://developers.redhat.com/content-gateway/rest/mirror/pub/openshift-v4/clients/crc/2.9.0) is a tool that provides a minimal, preconfigured OpenShift 4 cluster on a laptop or desktop machine for development and testing purposes. CRC is delivered as a platform inside of the VM.
+
+ * **odo (OpenShift Do)**, a CLI tool for developers, to manage application components on the OpenShift Container Platform.
+ 
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/193531714-a4316c2c-4ba9-4d31-86cf-7a3edc6f6375.png">
+  <br />
+</p>
+
+**System Requirements:**
+
+   * **OS:** CentOS Stream 8/RHEL 8/Fedora or later (the latest 2 releases).
+   * **Download:** [pull-secret](https://cloud.redhat.com/openshift/install/crc/installer-provisioned?intcmp=701f20000012ngPAAQ)
+   * **Login:** [Red Hat account](https://access.redhat.com/login)
+
+**Other physical requirements include:**
+
+   * Four virtual CPUs (**4 vCPUs**)
+   * 10GB of memory (**RAM**)
+   * 40GB of storage space
+
+**To set up CodeReady Containers, start by creating the ```crc``` directory, and then download and extract the ```crc``` package:**
+
+```mkdir /home/<user>/crc```
+
+```wget https://mirror.openshift.com/pub/openshift-v4/clients/crc/latest/crc-linux-amd64.tar.xz```
+
+```tar -xvf crc-linux-amd64.tar.xz```
+
+**Next, move the files to the crc directory and remove the downloaded package(s):**
+
+```mv /home/<user>/crc-linux-<version>-amd64/* /home/<user>/crc```
+
+```rm /home/<user>/crc-linux-amd64.tar.xz```
+
+```rm -r /home/<user>/crc-linux-<version>-amd64```
+
+**Change to the ```crc``` directory, make ```crc``` executable, and export your ```PATH``` like this:**
+
+```cd /home/<user>/crc```
+
+```chmod +x crc```
+
+```export PATH=$PATH:/home/<user>/crc```
+
+**Set up and start the cluster:**
+
+```crc setup```
+
+```crc start -p /<path-to-the-pull-secret-file>/pull-secret.txt```
+
+**Set up the OC environment:**
+
+```crc oc-env```
+
+```eval $(crc oc-env)```
+
+**Log in as the developer user:**
+
+```oc login -u developer -p developer https://api.crc.testing:6443```
+
+```oc logout```
+
+**And then, log in as the platform’s admin:**
+
+```oc login -u kubeadmin -p password https://api.crc.testing:6443```
+
+```oc logout```
+
+#### Interacting with the cluster. The most common ways include:
+
+**Starting the graphical web console:**
+
+```crc console```
+
+**Display the cluster’s status:**
+
+ ```crc status```
+
+**Shut down the OpenShift cluster:**
+
+```crc stop```
+
+**Delete or kill the OpenShift cluster:**
+
+```crc delete```
+
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/193534587-c86d546f-814b-420d-ac45-15d5c2ca6ede.png">
+  <br />
+</p>
+
+### Setting up Podman on WSL
+
+[Back to the Top](#table-of-contents)
+
+[Podman (the POD manager)](https://podman.io/) is an open source tool for developing, managing, and running containers on your Linux® systems. It also manages the entire container ecosystem using the libpod library.  Podman’s daemonless and inclusive architecture makes it a more secure and accessible option for container management, and its accompanying tools and features, such as [Buildah](https://www.redhat.com/en/topics/containers/what-is-buildah) and [Skopeo](https://www.redhat.com/en/topics/containers/what-is-skopeo), allow developers to customize their container environments to best suit their needs. 
+
+ * Fedora: ```sudo dnf install podman```
+ * CentOS: ```sudo yum --enablerepo=extras install podman```
+ * Ubuntu 20.04 or later: ```sudo apt install podman```
+ * Debian 11 (bullseye) or later, or sid/unstable: ```sudo apt install podman```
+ * ArchLinux: ```sudo pacman -S podman``` and then tweaks for rootless 
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/45159366/193426691-d47b65df-bd28-4c60-82f8-282005392556.png">
+  <br />
+ Podman
+</p>
+
+### Setting up Buildah on WSL
+
+[Back to the Top](#table-of-contents) 
+
+[Buildah](https://buildah.io/) is an open source, Linux-based tool that can build Docker- and Kubernetes-compatible images, and is easy to incorporate into scripts and build pipelines. In addition, Buildah has overlap functionality with [Podman](https://podman.io/), [Skopeo](https://github.com/containers/skopeo), and [CRI-O](https://cri-o.io/).
+
+ * Fedora: ```sudo dnf -y install buildah```
+ * CentOS: ```sudo yum --enablerepo=extras install buildah```
+ * Ubuntu 20.04 or later: ```sudo apt install buildah```
+ * Debian 11 (bullseye) or later, or sid/unstable: ```sudo apt install -y buildah```
+ * ArchLinux: ```sudo pacman -S buildah``` and then tweaks for rootless 
+ 
+ <p align="center">
+<img src="https://user-images.githubusercontent.com/45159366/193426954-22a0dcd8-5911-448b-b538-f1569ec20b35.png">
+  <br />
+ Buildah
+</p>
+
+### Installing Kubernetes on WSL with Rancher Desktop
+
+[Back to the Top](#table-of-contents)
+
+[Rancher Desktop](https://www.rancher.com/products/rancher-desktop) is an open-source desktop application for Mac, Windows and Linux. Rancher Desktop runs Kubernetes and container management on your desktop letting you choose the version of Kubernetes you want to run. It can also build, push, pull, and run container images using either the Docker CLI (with Moby/dockerd) or nerdctl (with containerd).
+
+ **Features:**
+
+  * Installs a new Linux VM in WSL2 that has a Kubernetes cluster based on [k3s](https://k3s.io/) as well as installs various components in it such as KIM (for building docker images on the cluster) and the [Traefik Ingress Controller](https://traefik.io/solutions/kubernetes-ingress/).
+ 
+  * It installs the kubectl and Helm CLIs on the Windows side linked to them.
+ 
+  * A nice Windows app to manage its settings and help facilitate its upgrades.
+  
+<p align="center">
+<img src="https://user-images.githubusercontent.com/45159366/193426266-8fa9222c-f1b1-4bd4-ad1f-3a9e99e6fb06.png">
+  <br />
+ Rancher Desktop 
+</p>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/45159366/193426337-263c38d0-d875-49ef-931d-693a018c4805.png">
+  <br />
+ Rancher Desktop Kubernetes Settings
+</p>
+
+#### .deb Dev Repository
+
+```curl -s https://download.opensuse.org/repositories/isv:/Rancher:/dev/deb/Release.key | gpg --dearmor | sudo dd status=none of=/usr/share/keyrings/isv-rancher-dev-archive-keyring.gpg```
+
+```echo 'deb [signed-by=/usr/share/keyrings/isv-rancher-dev-archive-keyring.gpg] https://download.opensuse.org/repositories/isv:/Rancher:/dev/deb/ ./' | sudo dd status=none of=/etc/apt/sources.list.d/isv-rancher-dev.list```
+
+```sudo apt update```
+
+**See available versions**
+
+```apt list -a rancher-desktop```
+
+```sudo apt install rancher-desktop=<version>```
+
+#### .rpm Dev Repository
+
+```sudo zypper addrepo https://download.opensuse.org/repositories/isv:/Rancher:/dev/rpm/isv:Rancher:dev.repo```
+
+```sudo zypper refresh```
+
+**See available versions**
+
+```zypper search -s rancher-desktop```
+
+```zypper install --oldpackage rancher-desktop=<version>```
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/45159366/193425700-2b184434-a2c8-4bd6-9e17-9eb278fa490c.png">
+  <br />
+ Rancher Desktop Architecture Overview
+</p>
+
+### Installing Kubernetes on WSL with Docker Desktop
+
+[Back to the Top](#table-of-contents)
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/192118415-36372619-de7a-4f5a-84c7-d20477765233.png">
+  <br />
+  Enable the WSL 2 base engine in Docker Desktop
+</p>
+
+We also need to set in Resources which WSL2 distribution we want to access Docker from, as shown below using Ubuntu 20.04. Then remember to restart Docker for Windows, and once the restart is complete we can use the docker command from within WSL:
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/192118416-fafb78c5-9222-4e6e-bc9c-47b3fe45a6bf.png">
+  <br />
+</p>
+
+
+Make sure to use kind as a simple way to run Kubernetes in a container. Here we will install the instructions from the official [Kind website](https://kind.sigs.k8s.io/docs/user/quick-start/).
+
+```curl -Lo ./kind https://github.com/kubernetes-sigs/kind/releases/download/v0.16.0/kind-$(uname)-amd64```
+
+```chmod +x ./kind```
+
+```mv ./kind /usr/local/bin/```
+
+Now that kind is installed, we can create the Kubernetes cluster
+
+```echo $KUBECONFIG```
+
+```ls $HOME/.kube```
+
+```kind create cluster --name wslkube```
+
+```ls $HOME/.kube```
+
+We have successfully created a single-node Kubernetes cluster.
+
+```kubectl get nodes```
+
+```kubectl get all --all-namespaces```
+
+### Installing Kubernetes on WSL with Microk8s
+
+[Back to the Top](#table-of-contents)
+
+* **Note:** This install option requires systemd to be running on WSL
+
+* **WSL Systemd requirements:** Windows 11 and a version of WSL 0.67.6 or above. 
+
+[MicroK8s](https://microk8s.io/) is the simplest production-grade upstream Kubernets setup to get up and running.
+
+Installing Microk8s 
+
+```sudo snap install microk8s --classic```
+
+Checking the status while Kubernetes starts
+
+```microk8s status --wait-ready```
+
+Turning on the services you want
+
+```microk8s enable dashboard dns registry istio```
+
+Try **microk8s enable --help** for a list of available services and optional features. **microk8s disable <name>** turns off a service.
+
+Start using Kubernetes
+
+```microk8s kubectl get all --all-namespaces```
+
+If you mainly use MicroK8s you can make our kubectl the default one on your command-line with **alias mkctl="microk8s kubectl"**.
+
+
+Access the Kubernetes dashboard
+
+```microk8s dashboard-proxy```
+
 
 # Kubernetes Tools, Frameworks, and Projects 
 
